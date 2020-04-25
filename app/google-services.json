@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1044220368020",
+    "firebase_url": "https://moviefirebase-e5ec2.firebaseio.com",
+    "project_id": "moviefirebase-e5ec2",
+    "storage_bucket": "moviefirebase-e5ec2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1044220368020:android:8d4cac7f093e655d5ed081",
+        "android_client_info": {
+          "package_name": "com.example.moviefirebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1044220368020-45p13o12c6iu8dphqb9h2mn39bhjdmmb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCVwDXQTkz_sumrA4S4w7NQu3b0VhOGzAE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1044220368020-45p13o12c6iu8dphqb9h2mn39bhjdmmb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
