@@ -5,7 +5,6 @@ import com.google.firebase.database.IgnoreExtraProperties
 
 @IgnoreExtraProperties
 data class MovieDB(
-    var uid: String? = "",
     var title: String? = "",
     var description: String? = "",
     var poster: String? = "",
@@ -18,7 +17,6 @@ data class MovieDB(
     @Exclude
     fun toMap(): Map<String, Any?> {
         return mapOf(
-            "uid" to uid,
             "title" to title,
             "description" to description,
             "poster" to poster,

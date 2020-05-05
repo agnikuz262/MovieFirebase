@@ -2,7 +2,6 @@ package com.example.moviefirebase
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -10,7 +9,11 @@ import com.example.moviefirebase.model.model.firebase.MovieDB
 import com.example.moviefirebase.ui.main.MainFragment
 import com.example.moviefirebase.ui.main.MovieAdapter
 import com.google.firebase.database.*
+import kotlinx.android.synthetic.main.main_activity.*
 import kotlinx.android.synthetic.main.movie_list.*
+import java.sql.Time
+import java.util.*
+import kotlin.collections.ArrayList
 
 class MainActivity : AppCompatActivity() {
 
@@ -25,6 +28,9 @@ class MainActivity : AppCompatActivity() {
                 .replace(R.id.container, MainFragment.newInstance())
                 .commitNow()
         }
+        val firebase = FirebaseDatabase.getInstance()
+        dbReference = firebase.getReference("movies")
+        addMovie("Kubuś Puchatek", "Film o przygodach Kubusia Puchatka")
 
 //        val fireBase = FirebaseDatabase.getInstance()
 //        dbReference = fireBase.getReference("movies")
@@ -46,7 +52,27 @@ class MainActivity : AppCompatActivity() {
 //        })
     }
 
-//    private fun setupMovieAdapter(arrayData: ArrayList<MovieDB>) {
+    //    private fun setupMovieAdapter(arrayData: ArrayList<MovieDB>) {
 //        recyclerView.adapter = MovieAdapter(arrayData)
+//    }
+    private fun addMovie(title: String, description: String) {
+        val movie = MovieDB(title, description)
+        dbReference.child("${Date().time}").setValue(movie)
+    }
+
+//    private fun addUserChangeListener() {
+//        dbReference.child(userId).addValueEventListener(object : ValueEventListener {
+//            override fun onDataChange(dataSnapshot: DataSnapshot) {
+//                val movie = dataSnapshot.getValue(MovieDB::class.java)
+//                if (movie == null) {
+//                    return
+//                }
+//
+//            }
+//
+//            override fun onCancelled(error: DatabaseError) {
+//                // Failed to read value
+//            }
+//        })
 //    }
 }

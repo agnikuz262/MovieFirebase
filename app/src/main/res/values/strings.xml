@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">MovieFirebase</string>
+    <string name="update_user_info">update user</string>
+    <string name="dummy_name">My name</string>
+    <string name="dummy_mobile">My mobile</string>
+    <string name="name_hint">Name hint</string>
+    <string name="mobile_hint">Mobile hint</string>
+    <string name="menu_library">Library</string>
+    <string name="menu_search">Search</string>
+    <string name="menu_settings">Settings</string>
 </resources>
