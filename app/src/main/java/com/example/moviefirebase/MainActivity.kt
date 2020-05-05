@@ -2,16 +2,13 @@ package com.example.moviefirebase
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.recyclerview.widget.GridLayoutManager
-import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
+import androidx.fragment.app.Fragment
 import com.example.moviefirebase.model.model.firebase.MovieDB
-import com.example.moviefirebase.ui.main.MainFragment
-import com.example.moviefirebase.ui.main.MovieAdapter
+import com.example.moviefirebase.ui.main.library.LibraryFragment
+import com.example.moviefirebase.ui.main.search.SearchFragment
+import com.example.moviefirebase.ui.main.settings.SettingsFragment
+import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.firebase.database.*
-import kotlinx.android.synthetic.main.main_activity.*
-import kotlinx.android.synthetic.main.movie_list.*
-import java.sql.Time
 import java.util.*
 import kotlin.collections.ArrayList
 
@@ -23,56 +20,42 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.main_activity)
-        if (savedInstanceState == null) {
-            supportFragmentManager.beginTransaction()
-                .replace(R.id.container, MainFragment.newInstance())
-                .commitNow()
-        }
+
         val firebase = FirebaseDatabase.getInstance()
         dbReference = firebase.getReference("movies")
-        addMovie("Kubuś Puchatek", "Film o przygodach Kubusia Puchatka")
+        //   addMovie("Kubuś Puchatek", "Film o przygodach Kubusia Puchatka")
+        var bottomNav = findViewById<BottomNavigationView>(R.id.bottom_navigation)
+        bottomNav.setOnNavigationItemSelectedListener { item ->
+            var fragment : Fragment =
+                LibraryFragment()
 
-//        val fireBase = FirebaseDatabase.getInstance()
-//        dbReference = fireBase.getReference("movies")
-//        recyclerView.layoutManager = GridLayoutManager(applicationContext, 1)
-//
-//        dbReference.addValueEventListener(object : ValueEventListener {
-//            override fun onDataChange(snapshot: DataSnapshot) {
-//                listOfMovies = ArrayList()
-//                for(row in snapshot.children) {
-//                    val newRow = row.getValue(MovieDB::class.java)
-//                    listOfMovies.add(newRow!!)
-//                }
-//                setupMovieAdapter(listOfMovies)
-//            }
-//
-//            override fun onCancelled(error: DatabaseError) {
-//               Log.e("TAG", error.toString())
-//            }
-//        })
+            when (item.itemId) {
+                R.id.menu_library -> {
+                    fragment =
+                        LibraryFragment()
+                }
+                R.id.menu_search -> {
+                    fragment =
+                        SearchFragment()
+                }
+                R.id.menu_settings -> {
+                    fragment =
+                        SettingsFragment()
+                }
+            }
+
+            supportFragmentManager.beginTransaction().replace(R.id.fragment_container, fragment).commit()
+            true
+        }
+
     }
 
-    //    private fun setupMovieAdapter(arrayData: ArrayList<MovieDB>) {
-//        recyclerView.adapter = MovieAdapter(arrayData)
-//    }
     private fun addMovie(title: String, description: String) {
         val movie = MovieDB(title, description)
         dbReference.child("${Date().time}").setValue(movie)
     }
 
-//    private fun addUserChangeListener() {
-//        dbReference.child(userId).addValueEventListener(object : ValueEventListener {
-//            override fun onDataChange(dataSnapshot: DataSnapshot) {
-//                val movie = dataSnapshot.getValue(MovieDB::class.java)
-//                if (movie == null) {
-//                    return
-//                }
-//
-//            }
-//
-//            override fun onCancelled(error: DatabaseError) {
-//                // Failed to read value
-//            }
-//        })
-//    }
+
 }
+
+
