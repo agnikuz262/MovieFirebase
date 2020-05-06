@@ -23,10 +23,14 @@ class MainActivity : AppCompatActivity() {
 
         val firebase = FirebaseDatabase.getInstance()
         dbReference = firebase.getReference("movies")
-        //   addMovie("Kubuś Puchatek", "Film o przygodach Kubusia Puchatka")
-        var bottomNav = findViewById<BottomNavigationView>(R.id.bottom_navigation)
+//        addMovie(
+//            "Masło",
+//            "xkjbcxhc bvjxbvx bdjbfkjz bkjzc jkzcvvcvfdfvdf fd dfg d dfgdfg dfg dfg dfg dfg dfgdfg dg dfgdfg dfgdfgfdg dfgdfg dsgd gdfgfh kkasnkjnds dj kdjjsd kjsdfj dsjfjs bjsb fjsdbjsdbf jd",
+//            "https://vignette.wikia.nocookie.net/disney/images/7/77/Kubu%C5%9B_Puchatek.jpg/revision/latest/top-crop/width/360/height/450?cb=20161021130126&path-prefix=pl"
+//        )
+        val bottomNav = findViewById<BottomNavigationView>(R.id.bottom_navigation)
         bottomNav.setOnNavigationItemSelectedListener { item ->
-            var fragment : Fragment =
+            var fragment: Fragment =
                 LibraryFragment()
 
             when (item.itemId) {
@@ -44,14 +48,15 @@ class MainActivity : AppCompatActivity() {
                 }
             }
 
-            supportFragmentManager.beginTransaction().replace(R.id.fragment_container, fragment).commit()
+            supportFragmentManager.beginTransaction().replace(R.id.fragment_container, fragment)
+                .commit()
             true
         }
 
     }
 
-    private fun addMovie(title: String, description: String) {
-        val movie = MovieDB(title, description)
+    private fun addMovie(title: String, description: String, poster: String) {
+        val movie = MovieDB(title, description, poster)
         dbReference.child("${Date().time}").setValue(movie)
     }
 

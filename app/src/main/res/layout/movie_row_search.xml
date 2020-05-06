@@ -8,7 +8,7 @@
         <ImageView
             android:layout_weight="1"
             android:contentDescription="@string/poster_image"
-            android:id="@+id/imageView"
+            android:id="@+id/poster_row"
             android:layout_width="wrap_content"
             android:layout_height="56dp"
             app:srcCompat="?attr/homeAsUpIndicator" />

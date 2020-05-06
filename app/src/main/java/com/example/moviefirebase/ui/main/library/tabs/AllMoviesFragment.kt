@@ -6,21 +6,50 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.lifecycle.Observer
+import androidx.lifecycle.ViewModelProviders
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.ListAdapter
+import androidx.recyclerview.widget.RecyclerView
 
 import com.example.moviefirebase.R
+import com.example.moviefirebase.ui.main.MovieAdapter
+import com.google.firebase.database.DatabaseReference
+import com.google.firebase.database.FirebaseDatabase
+import kotlinx.android.synthetic.main.fragment_all_movies.*
 
-/**
- * A simple [Fragment] subclass.
- */
 class AllMoviesFragment : Fragment() {
+
+    private lateinit var viewModel: AllMoviesViewModel
+    private lateinit var adapter: MovieAdapter
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_all_movies, container, false)
     }
 
+    override fun onActivityCreated(savedInstanceState: Bundle?) {
+        super.onActivityCreated(savedInstanceState)
+        viewModel = ViewModelProviders.of(this).get(AllMoviesViewModel::class.java)
 
+    }
+
+    override fun onStart() {
+        super.onStart()
+
+        viewModel.getAllMovies().observe(this,
+            Observer {
+                adapter = MovieAdapter(it, requireContext(), this)
+                recycler_all.adapter = adapter
+                recycler_all.layoutManager =
+                    LinearLayoutManager(activity, RecyclerView.VERTICAL, false)
+            })
+    }
+
+//    override fun onDestroyView() {
+//        super.onDestroyView()
+//        recycler_all.adapter = null
+//    }
 }

@@ -11,12 +11,12 @@ import androidx.fragment.app.FragmentStatePagerAdapter
 import androidx.viewpager.widget.ViewPager
 
 import com.example.moviefirebase.R
+import com.example.moviefirebase.ui.main.ListPagerAdapter
 import com.example.moviefirebase.ui.main.library.tabs.AllMoviesFragment
 import com.example.moviefirebase.ui.main.library.tabs.UnwatchedMoviesFragment
 import com.example.moviefirebase.ui.main.library.tabs.WatchedMoviesFragment
 import com.google.android.material.tabs.TabLayout
 
-private const val ARG_OBJECT = "object"
 
 class LibraryFragment : Fragment() {
 
@@ -56,25 +56,3 @@ class LibraryFragment : Fragment() {
     }
 }
 
-class ListPagerAdapter(fm: FragmentManager) : FragmentStatePagerAdapter(fm) {
-
-    override fun getCount(): Int = 3
-
-    override fun getItem(i: Int): Fragment {
-        when (i) {
-            0 -> return AllMoviesFragment()
-            1 -> return UnwatchedMoviesFragment()
-            2 -> return WatchedMoviesFragment()
-        }
-        return AllMoviesFragment()
-    }
-
-    override fun getPageTitle(position: Int): CharSequence {
-        when (position) {
-            0 -> return "All"
-            1 -> return "To see"
-            2 -> return "Seen"
-        }
-        return "All"
-    }
-}
