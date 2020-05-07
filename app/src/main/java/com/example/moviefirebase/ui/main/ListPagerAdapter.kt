@@ -4,8 +4,8 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentStatePagerAdapter
 import com.example.moviefirebase.ui.main.library.tabs.AllMoviesFragment
-import com.example.moviefirebase.ui.main.library.tabs.UnwatchedMoviesFragment
-import com.example.moviefirebase.ui.main.library.tabs.WatchedMoviesFragment
+import com.example.moviefirebase.ui.main.library.tabs.ToSeeMoviesFragment
+import com.example.moviefirebase.ui.main.library.tabs.SeenMoviesFragment
 
 
 class ListPagerAdapter(fm: FragmentManager) : FragmentStatePagerAdapter(fm) {
@@ -15,8 +15,8 @@ class ListPagerAdapter(fm: FragmentManager) : FragmentStatePagerAdapter(fm) {
     override fun getItem(i: Int): Fragment {
         when (i) {
             0 -> return AllMoviesFragment()
-            1 -> return UnwatchedMoviesFragment()
-            2 -> return WatchedMoviesFragment()
+            1 -> return ToSeeMoviesFragment()
+            2 -> return SeenMoviesFragment()
         }
         return AllMoviesFragment()
     }

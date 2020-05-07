@@ -9,47 +9,40 @@ import android.view.ViewGroup
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 
 import com.example.moviefirebase.R
 import com.example.moviefirebase.ui.main.MovieAdapter
-import com.google.firebase.database.DatabaseReference
-import com.google.firebase.database.FirebaseDatabase
-import kotlinx.android.synthetic.main.fragment_all_movies.*
+import kotlinx.android.synthetic.main.fragment_seen_movies.*
 
-class AllMoviesFragment : Fragment() {
+class SeenMoviesFragment : Fragment() {
 
-    private lateinit var viewModel: AllMoviesViewModel
+    private lateinit var viewModel: SeenMoviesViewModel
     private lateinit var adapter: MovieAdapter
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_all_movies, container, false)
+        // Inflate the layout for this fragment
+        return inflater.inflate(R.layout.fragment_seen_movies, container, false)
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
-        viewModel = ViewModelProviders.of(this).get(AllMoviesViewModel::class.java)
+        viewModel = ViewModelProviders.of(this).get(SeenMoviesViewModel::class.java)
 
     }
 
     override fun onStart() {
         super.onStart()
 
-        viewModel.getAllMovies().observe(this,
+        viewModel.getSeenMovies().observe(this,
             Observer {
                 adapter = MovieAdapter(it, requireContext(), this)
-                recycler_all.adapter = adapter
-                recycler_all.layoutManager =
+                recycler_seen.adapter = adapter
+                recycler_seen.layoutManager =
                     LinearLayoutManager(activity, RecyclerView.VERTICAL, false)
             })
-    }
-
-    override fun onDestroyView() {
-        super.onDestroyView()
-        recycler_all.adapter = null
     }
 }

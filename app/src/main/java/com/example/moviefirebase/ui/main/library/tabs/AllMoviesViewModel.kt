@@ -28,14 +28,11 @@ class AllMoviesViewModel : ViewModel() {
         return allMovies
     }
 
-    private fun toMovies(snapshot: DataSnapshot) : List<MovieDB> {
+    fun toMovies(snapshot: DataSnapshot) : List<MovieDB> {
         val list = ArrayList<MovieDB>()
         for(i in snapshot.children) {
             val newMovie = i.getValue(MovieDB::class.java)
             list.add(newMovie!!)
-        }
-        for(i in list) {
-            print(i.title)
         }
         return list
 

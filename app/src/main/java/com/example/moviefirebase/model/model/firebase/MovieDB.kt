@@ -11,7 +11,8 @@ data class MovieDB(
     var director: String? = "",
     var actors: String? = "",
     var rate: String? = "",
-    var seen: Boolean? = false
+    var seen: Boolean? = false,
+    var id: Long? = 0
 ){
 
     @Exclude

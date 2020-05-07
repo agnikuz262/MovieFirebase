@@ -6,15 +6,10 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.fragment.app.FragmentManager
-import androidx.fragment.app.FragmentStatePagerAdapter
 import androidx.viewpager.widget.ViewPager
 
 import com.example.moviefirebase.R
 import com.example.moviefirebase.ui.main.ListPagerAdapter
-import com.example.moviefirebase.ui.main.library.tabs.AllMoviesFragment
-import com.example.moviefirebase.ui.main.library.tabs.UnwatchedMoviesFragment
-import com.example.moviefirebase.ui.main.library.tabs.WatchedMoviesFragment
 import com.google.android.material.tabs.TabLayout
 
 

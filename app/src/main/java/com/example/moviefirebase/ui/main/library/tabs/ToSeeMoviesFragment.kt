@@ -1,6 +1,5 @@
 package com.example.moviefirebase.ui.main.library.tabs
 
-
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -9,47 +8,38 @@ import android.view.ViewGroup
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 
 import com.example.moviefirebase.R
 import com.example.moviefirebase.ui.main.MovieAdapter
-import com.google.firebase.database.DatabaseReference
-import com.google.firebase.database.FirebaseDatabase
-import kotlinx.android.synthetic.main.fragment_all_movies.*
+import kotlinx.android.synthetic.main.fragment_to_see_movies.*
 
-class AllMoviesFragment : Fragment() {
-
-    private lateinit var viewModel: AllMoviesViewModel
+class ToSeeMoviesFragment : Fragment() {
+    private lateinit var viewModel: ToSeeMoviesViewModel
     private lateinit var adapter: MovieAdapter
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_all_movies, container, false)
+        return inflater.inflate(R.layout.fragment_to_see_movies, container, false)
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
-        viewModel = ViewModelProviders.of(this).get(AllMoviesViewModel::class.java)
+        viewModel = ViewModelProviders.of(this).get(ToSeeMoviesViewModel::class.java)
 
     }
 
     override fun onStart() {
         super.onStart()
 
-        viewModel.getAllMovies().observe(this,
+        viewModel.getToSeeMovies().observe(this,
             Observer {
                 adapter = MovieAdapter(it, requireContext(), this)
-                recycler_all.adapter = adapter
-                recycler_all.layoutManager =
+                recycler_to_see.adapter = adapter
+                recycler_to_see.layoutManager =
                     LinearLayoutManager(activity, RecyclerView.VERTICAL, false)
             })
-    }
-
-    override fun onDestroyView() {
-        super.onDestroyView()
-        recycler_all.adapter = null
     }
 }

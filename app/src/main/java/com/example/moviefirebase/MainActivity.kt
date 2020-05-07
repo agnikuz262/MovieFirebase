@@ -54,7 +54,6 @@ class MainActivity : AppCompatActivity() {
         }
 
     }
-
     private fun addMovie(title: String, description: String, poster: String) {
         val movie = MovieDB(title, description, poster)
         dbReference.child("${Date().time}").setValue(movie)

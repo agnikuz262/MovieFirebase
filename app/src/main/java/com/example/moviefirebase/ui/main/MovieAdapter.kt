@@ -3,19 +3,19 @@ package com.example.moviefirebase.ui.main
 import android.content.Context
 import android.content.Intent
 import android.os.Build
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageButton
-import android.widget.ImageView
-import android.widget.LinearLayout
-import android.widget.TextView
+import android.widget.*
 import androidx.annotation.RequiresApi
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.RecyclerView
 import com.example.moviefirebase.MainActivity
 import com.example.moviefirebase.R
 import com.example.moviefirebase.model.model.firebase.MovieDB
+import com.google.firebase.database.DatabaseReference
+import com.google.firebase.database.FirebaseDatabase
 import com.squareup.picasso.Picasso
 import java.lang.Exception
 
@@ -25,6 +25,8 @@ class MovieAdapter(
     val fragment: Fragment
 ) :
     RecyclerView.Adapter<MovieAdapter.ViewHolder>() {
+
+    private val dbReference: DatabaseReference = FirebaseDatabase.getInstance().getReference("movies")
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val inflater: LayoutInflater = LayoutInflater.from(parent.context)
@@ -40,13 +42,17 @@ class MovieAdapter(
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder.titleView.text = movieList[position].title
         holder.descriptionView.text = movieList[position].description
-        holder.rateView.text = movieList[position].rate + "/10"
-        when(movieList[position].seen) {
-            true -> {
-                holder.seenButtonView.setImageDrawable(context.getDrawable(R.drawable.ic_eye))
-            } else -> {
-            holder.seenButtonView.setImageDrawable(context.getDrawable(R.drawable.ic_eye))
+        if (movieList[position].rate != null && movieList[position].rate != "") {
+            holder.rateView.text = movieList[position].rate + "/10"
         }
+
+        when (movieList[position].seen) {
+            true -> {
+                holder.seenButtonView.setImageDrawable(context.getDrawable(R.drawable.ic_eye_yellow))
+            }
+            else -> {
+                holder.seenButtonView.setImageDrawable(context.getDrawable(R.drawable.ic_eye))
+            }
         }
         if (movieList[position].poster != null) {
             try {
@@ -55,16 +61,29 @@ class MovieAdapter(
                 print(e)
             }
         }
-        //todo add method which changes seen to false/true in setOnClickListenerze (update in db)
+        holder.seenButtonView.setOnClickListener {
+            if (movieList[position].seen == true) {
+                dbReference.child("${movieList[position].id}").child("seen").setValue(false)
+                    .addOnSuccessListener {
+                        Toast.makeText(context, "Movie removed from \"Seen\"", Toast.LENGTH_SHORT)
+                            .show()
+                    }
+            } else {
+                dbReference.child("${movieList[position].id}").child("seen").setValue(true)
+                    .addOnSuccessListener {
+                        Toast.makeText(context, "Movie added to \"Seen\"", Toast.LENGTH_SHORT)
+                            .show()
+                    }
+            }
 
-
+        }
         //todo
-//        holder.movieRowView.setOnClickListener {
-//            val intent = Intent(context, MovieDetailsActivity::class.java).apply {
-//                putExtra("id", movieList[position].id)
-//            }
-//            (context as MainActivity).startActivity(intent)
-//        }
+        holder.movieRowView.setOnClickListener {
+            val intent = Intent(context, MovieDetailsActivity::class.java).apply {
+                putExtra("id", movieList[position].id)
+            }
+            (context as MainActivity).startActivity(intent)
+        }
     }
 
     inner class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
