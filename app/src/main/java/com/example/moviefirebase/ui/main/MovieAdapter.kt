@@ -3,7 +3,6 @@ package com.example.moviefirebase.ui.main
 import android.content.Context
 import android.content.Intent
 import android.os.Build
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -13,7 +12,7 @@ import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.RecyclerView
 import com.example.moviefirebase.MainActivity
 import com.example.moviefirebase.R
-import com.example.moviefirebase.model.model.firebase.MovieDB
+import com.example.moviefirebase.model.model.firebase.MovieDbEntity
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 import com.squareup.picasso.Picasso
@@ -21,7 +20,7 @@ import java.lang.Exception
 
 
 class MovieAdapter(
-    private val movieList: List<MovieDB>, val context: Context,
+    private val movieList: List<MovieDbEntity>, val context: Context,
     val fragment: Fragment
 ) :
     RecyclerView.Adapter<MovieAdapter.ViewHolder>() {

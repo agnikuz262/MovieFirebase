@@ -3,7 +3,7 @@ package com.example.moviefirebase
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.Fragment
-import com.example.moviefirebase.model.model.firebase.MovieDB
+import com.example.moviefirebase.model.model.firebase.MovieDbEntity
 import com.example.moviefirebase.ui.main.library.LibraryFragment
 import com.example.moviefirebase.ui.main.search.SearchFragment
 import com.example.moviefirebase.ui.main.settings.SettingsFragment
@@ -15,7 +15,7 @@ import kotlin.collections.ArrayList
 class MainActivity : AppCompatActivity() {
 
     private lateinit var dbReference: DatabaseReference
-    private lateinit var listOfMovies: ArrayList<MovieDB>
+    private lateinit var listOfMovies: ArrayList<MovieDbEntity>
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -55,7 +55,7 @@ class MainActivity : AppCompatActivity() {
 
     }
     private fun addMovie(title: String, description: String, poster: String) {
-        val movie = MovieDB(title, description, poster)
+        val movie = MovieDbEntity(title, description, poster)
         dbReference.child("${Date().time}").setValue(movie)
     }
 

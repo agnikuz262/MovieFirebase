@@ -1,19 +1,18 @@
 package com.example.moviefirebase.ui.main
 
-import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import com.example.moviefirebase.R
-import com.example.moviefirebase.model.model.firebase.MovieDB
+import com.example.moviefirebase.model.model.firebase.MovieDbEntity
 import com.google.firebase.database.*
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.content_movie.*
 import java.lang.Exception
 
 class MovieDetailsActivity : AppCompatActivity() {
-    private lateinit var movie: MovieDB
+    private lateinit var movie: MovieDbEntity
     var dbReference: DatabaseReference = FirebaseDatabase.getInstance().getReference("movies")
     private var id: Long = 0
 
@@ -26,7 +25,7 @@ class MovieDetailsActivity : AppCompatActivity() {
             dbReference.child("$id").addListenerForSingleValueEvent(object : ValueEventListener {
                 override fun onDataChange(dataSnapshot: DataSnapshot) {
                     if (dataSnapshot.exists()) {
-                        val firebaseMovie = dataSnapshot.getValue(MovieDB::class.java)
+                        val firebaseMovie = dataSnapshot.getValue(MovieDbEntity::class.java)
                         movie = firebaseMovie!!
 
                         details_title.text = movie.title
