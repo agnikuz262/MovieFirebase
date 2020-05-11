@@ -1,6 +1,7 @@
 package com.example.moviefirebase.ui.main
 
 import android.os.Bundle
+import android.util.Log
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
@@ -28,14 +29,17 @@ class MovieDetailsActivity : AppCompatActivity() {
                         val firebaseMovie = dataSnapshot.getValue(MovieDbEntity::class.java)
                         movie = firebaseMovie!!
 
-                        details_title.text = movie.title
-                        details_description.text = movie.description
-                        details_rate.text = movie.rate
-                        details_director.text = movie.director
-                        details_actors.text = movie.actors
+                        details_title.setText(movie.title)
+                        details_description.setText(movie.description)
+                        details_rate.setText(movie.rate)
+                        details_director.setText(movie.director)
+                        details_actors.setText(movie.actors)
+                        details_year.setText(movie.year)
+                        details_genre.setText(movie.genre)
                         if (movie.poster != null && movie.poster != "") {
                             try {
-                                Picasso.with(applicationContext).load(movie.poster).into(details_poster)
+                                Picasso.with(applicationContext).load(movie.poster)
+                                    .into(details_poster)
                             } catch (e: Exception) {
                                 print(e)
                             }
@@ -55,10 +59,12 @@ class MovieDetailsActivity : AppCompatActivity() {
             deleteAlert.setTitle("Delete movie")
             deleteAlert.setMessage("Are you sure you want to delete this movie?")
 
-            deleteAlert.setPositiveButton(android.R.string.yes) { _,_ ->
+            deleteAlert.setPositiveButton(android.R.string.yes) { _, _ ->
                 dbReference.child("$id").removeValue().addOnSuccessListener {
-                    Toast.makeText(applicationContext,
-                        "Movie deleted", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(
+                        applicationContext,
+                        "Movie deleted", Toast.LENGTH_SHORT
+                    ).show()
                 }
                 this.finish()
             }
@@ -67,6 +73,33 @@ class MovieDetailsActivity : AppCompatActivity() {
 
             deleteAlert.show()
         }
-    }
 
+        details_save_button.setOnClickListener {
+            val title = details_title.text.toString()
+            val year = details_year.text.toString()
+            val description = details_description.text.toString()
+            val director = details_director.text.toString()
+            val actors = details_actors.text.toString()
+            val genre = details_genre.text.toString()
+            //todo val poster = add_poster.text.toString()
+            val rate = details_rate.text.toString()
+
+            val updatedMovie = MovieDbEntity(
+                title,
+                description,
+                movie.poster,
+                director,
+                actors,
+                rate,
+                movie.seen,
+                movie.id,
+                genre,
+                year
+            )
+            val postMovie = updatedMovie.toMap()
+            dbReference.child("$id").updateChildren(postMovie)
+
+            Toast.makeText(applicationContext, "Movie updated", Toast.LENGTH_SHORT).show()
+        }
+    }
 }

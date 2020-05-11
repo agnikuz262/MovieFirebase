@@ -12,7 +12,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
 import com.example.moviefirebase.R
-import com.example.moviefirebase.ui.main.MovieAdapter
+import com.example.moviefirebase.adapters.MovieAdapter
 import kotlinx.android.synthetic.main.fragment_seen_movies.*
 
 class SeenMoviesFragment : Fragment() {
@@ -39,7 +39,11 @@ class SeenMoviesFragment : Fragment() {
 
         viewModel.getSeenMovies().observe(this,
             Observer {
-                adapter = MovieAdapter(it, requireContext(), this)
+                adapter = MovieAdapter(
+                    it,
+                    requireContext(),
+                    this
+                )
                 recycler_seen.adapter = adapter
                 recycler_seen.layoutManager =
                     LinearLayoutManager(activity, RecyclerView.VERTICAL, false)

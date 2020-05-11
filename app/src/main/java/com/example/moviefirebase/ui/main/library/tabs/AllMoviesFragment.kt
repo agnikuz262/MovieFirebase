@@ -9,13 +9,10 @@ import android.view.ViewGroup
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 
 import com.example.moviefirebase.R
-import com.example.moviefirebase.ui.main.MovieAdapter
-import com.google.firebase.database.DatabaseReference
-import com.google.firebase.database.FirebaseDatabase
+import com.example.moviefirebase.adapters.MovieAdapter
 import kotlinx.android.synthetic.main.fragment_all_movies.*
 
 class AllMoviesFragment : Fragment() {
@@ -41,7 +38,11 @@ class AllMoviesFragment : Fragment() {
 
         viewModel.getAllMovies().observe(this,
             Observer {
-                adapter = MovieAdapter(it, requireContext(), this)
+                adapter = MovieAdapter(
+                    it,
+                    requireContext(),
+                    this
+                )
                 recycler_all.adapter = adapter
                 recycler_all.layoutManager =
                     LinearLayoutManager(activity, RecyclerView.VERTICAL, false)

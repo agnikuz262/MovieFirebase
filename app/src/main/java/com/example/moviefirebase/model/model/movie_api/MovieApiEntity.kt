@@ -1,29 +1,30 @@
 package com.example.moviefirebase.model.model.movie_api
 
-import com.squareup.moshi.Json
+import com.google.gson.annotations.SerializedName
+
 
 data class MovieApiEntity(
-    @Json(name = "Actors")
+    @SerializedName("Actors")
     val actors: String,
 
-    @Json(name = "Director")
+    @SerializedName("Director")
     val director: String,
 
-    @Json(name = "Genre")
+    @SerializedName("Genre")
     val genre: String,
 
-    @Json(name = "Plot")
+    @SerializedName("Plot")
     val description: String,
 
-    @Json(name = "Poster")
+    @SerializedName("Poster")
     val poster: String,
 
-    @Json(name = "Title")
+    @SerializedName("Title")
     val title: String,
 
-    @Json(name = "Year")
+    @SerializedName("Year")
     val year: String,
 
-    @Json(name = "imdbRating")
+    @SerializedName("imdbRating")
     val rate: String
 )

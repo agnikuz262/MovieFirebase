@@ -1,29 +1,48 @@
 package com.example.moviefirebase.model.model.movie_api
 
-import com.squareup.moshi.Moshi
-import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
-import retrofit2.Call
-import retrofit2.Retrofit
-import retrofit2.converter.moshi.MoshiConverterFactory
-import retrofit2.http.GET
+import android.util.Log
+import com.google.gson.GsonBuilder
+import okhttp3.*
+import java.io.IOException
+import java.lang.Exception
 
-private val apiKey = "b8157f77"
-private val baseUrl = "https://www.omdbapi.com/?apikey=$apiKey&"
+class MovieService {
 
-private val moshi = Moshi.Builder().add(KotlinJsonAdapterFactory()).build()
+    companion object {
+        private var searchResponse = MovieSearchResponse()
+    }
 
-private val retrofit =
-    Retrofit.Builder().addConverterFactory(MoshiConverterFactory.create(moshi))
-        .baseUrl(baseUrl).build()
+    private val apiKey = "b8157f77"
+    private val baseUrl = "https://www.omdbapi.com/?apikey=$apiKey&"
 
-interface MovieService {
-    @GET("?apiKey=b8157f77&s=How")
-    fun getSearchMovies():
-            Call<MovieSearchResponse>
-}
+    fun getSearchedMovies(typedSearch: String): MovieSearchResponse {
+        val searchWords = typedSearch.split(" ".toRegex())
+        var url = baseUrl + typedSearch
+        for (i in searchWords)
+            url += "$i&"
 
-object MovieApi {
-    val retrofitServie: MovieService by lazy {
-        retrofit.create(MovieService::class.java)
+        try {
+            val client = OkHttpClient()
+            val request = Request.Builder().url(url).get().build()
+
+            client.newCall(request).enqueue(object : Callback {
+                override fun onFailure(call: Call, e: IOException) {
+                    call.cancel()
+                    Log.e("Failure: ", e.toString())
+                }
+
+                override fun onResponse(call: Call, response: Response) {
+                    val successResponse = response.body()?.string()
+                    val gson = GsonBuilder().setLenient().create()
+                    val data = gson.fromJson(successResponse, MovieSearchResponse::class.java)
+                    searchResponse = data
+                }
+            })
+
+        } catch (e: Exception) {
+            Log.e("TAG", "Failure of API search $e")
+        }
+        return searchResponse
     }
 }
+

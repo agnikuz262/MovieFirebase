@@ -10,20 +10,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="041aa784-e349-45ed-a956-d13412df0e62" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_multidex_multidex_2_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_multidex_multidex_instrumentation_2_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_moshi_moshi_1_9_2_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_moshi_moshi_kotlin_1_9_2_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_okhttp3_okhttp_3_14_7_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_okio_okio_1_17_2_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_retrofit2_converter_moshi_2_8_1_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_retrofit2_converter_scalars_2_8_1_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_retrofit2_retrofit_2_8_1_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_reflect_1_3_50_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_1_3_70_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_common_1_3_70_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlinx_kotlinx_coroutines_android_1_3_4_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlinx_kotlinx_coroutines_core_1_3_4_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_code_gson_gson_2_8_6_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_1_3_61_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_common_1_3_61_jar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" afterDir="false" />
@@ -35,27 +24,47 @@
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/assetWizardSettings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/assetWizardSettings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_1_3_61_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_common_1_3_61_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_jakewharton_retrofit_retrofit2_kotlin_coroutines_adapter_0_9_2_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_moshi_moshi_1_9_2_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_moshi_moshi_kotlin_1_9_2_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_retrofit2_converter_moshi_2_8_1_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_retrofit2_converter_scalars_2_8_1_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_retrofit2_retrofit_2_8_1_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_reflect_1_3_50_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_1_3_70_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_common_1_3_70_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlinx_kotlinx_coroutines_android_1_3_4_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlinx_kotlinx_coroutines_core_1_3_4_jar.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MovieFirebase.iml" beforeDir="false" afterPath="$PROJECT_DIR$/MovieFirebase.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/moviefirebase/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/moviefirebase/MainActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/moviefirebase/model/model/firebase/MovieDB.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/moviefirebase/model/model/firebase/MovieDbEntity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/moviefirebase/model/model/movie_api/MovieModel.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/moviefirebase/ui/main/MovieAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/moviefirebase/ui/main/MovieAdapter.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/moviefirebase/model/model/firebase/MovieDbEntity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/moviefirebase/model/model/firebase/MovieDbEntity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/moviefirebase/model/model/movie_api/MovieApiEntity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/moviefirebase/model/model/movie_api/MovieApiEntity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/moviefirebase/model/model/movie_api/MovieSearch.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/moviefirebase/model/model/movie_api/MovieSearch.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/moviefirebase/model/model/movie_api/MovieSearchResponse.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/moviefirebase/model/model/movie_api/MovieSearchResponse.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/moviefirebase/model/model/movie_api/MovieService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/moviefirebase/model/model/movie_api/MovieService.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/moviefirebase/ui/main/ListPagerAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/moviefirebase/adapters/ListPagerAdapter.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/moviefirebase/ui/main/MovieAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/moviefirebase/adapters/MovieAdapter.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/moviefirebase/ui/main/MovieDetailsActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/moviefirebase/ui/main/MovieDetailsActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/moviefirebase/ui/main/library/tabs/AllMoviesViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/moviefirebase/ui/main/library/tabs/AllMoviesViewModel.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/moviefirebase/ui/main/library/tabs/SeenMoviesViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/moviefirebase/ui/main/library/tabs/SeenMoviesViewModel.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/moviefirebase/ui/main/library/tabs/ToSeeMoviesViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/moviefirebase/ui/main/library/tabs/ToSeeMoviesViewModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/moviefirebase/ui/main/SearchAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/moviefirebase/adapters/SearchAdapter.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/moviefirebase/ui/main/library/LibraryFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/moviefirebase/ui/main/library/LibraryFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/moviefirebase/ui/main/library/tabs/AllMoviesFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/moviefirebase/ui/main/library/tabs/AllMoviesFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/moviefirebase/ui/main/library/tabs/SeenMoviesFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/moviefirebase/ui/main/library/tabs/SeenMoviesFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/moviefirebase/ui/main/library/tabs/ToSeeMoviesFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/moviefirebase/ui/main/library/tabs/ToSeeMoviesFragment.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/moviefirebase/ui/main/search/SearchFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/moviefirebase/ui/main/search/SearchFragment.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/moviefirebase/ui/main/search/SearchViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/moviefirebase/ui/main/search/SearchViewModel.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/movie_row_search.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/movie_row_search.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/search_fragment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/search_fragment.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/content_movie.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/content_movie.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_all_movies.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_all_movies.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/library_fragment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/library_fragment.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/movie_row_library.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/movie_row_library.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/menu/bottom_navigation.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/menu/bottom_navigation.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -82,78 +91,115 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/moviefirebase/model/model/movie_api/MovieApiEntity.kt">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/moviefirebase/ui/main/library/LibraryFragment.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="28" column="1" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
+            <state relative-caret-position="544">
+              <caret line="44" column="38" selection-start-line="44" selection-start-column="38" selection-end-line="44" selection-end-column="38" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/moviefirebase/model/model/movie_api/MovieService.kt">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/moviefirebase/ui/main/library/tabs/AllMoviesFragment.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="124">
-              <caret line="19" column="26" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
+            <state relative-caret-position="107">
+              <caret line="38" column="22" selection-start-line="38" selection-start-column="22" selection-end-line="38" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/moviefirebase/ui/main/library/tabs/AllMoviesViewModel.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="33" column="64" lean-forward="true" selection-start-line="33" selection-start-column="29" selection-end-line="33" selection-end-column="64" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_seen_movies.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="15" column="52" selection-start-line="15" selection-start-column="52" selection-end-line="15" selection-end-column="52" />
+            </state>
+          </provider>
+          <provider editor-type-id="android-designer2" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_movie_details.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="32" lean-forward="true" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
+            </state>
+          </provider>
+          <provider editor-type-id="android-designer2" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/content_movie.xml">
+          <provider editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="31" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
               <folding>
-                <element signature="e#57#283#0" expanded="true" />
+                <element signature="e#541#581#0" expanded="true" />
+                <element signature="e#1429#1448#0" expanded="true" />
+                <element signature="e#1867#1892#0" expanded="true" />
+                <element signature="e#2303#2321#0" expanded="true" />
+                <element signature="e#2738#2756#0" expanded="true" />
+                <element signature="e#3167#3186#0" expanded="true" />
+                <element signature="e#3644#3666#0" expanded="true" />
+                <element signature="e#4078#4098#0" expanded="true" />
+                <element signature="e#4607#4629#0" expanded="true" />
+                <element signature="e#5283#5305#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+          <provider selected="true" editor-type-id="android-designer2" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/moviefirebase/ui/main/MovieDetailsActivity.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="477">
+              <caret line="105" selection-start-line="105" selection-end-line="105" />
+              <folding>
+                <element signature="e#43#443#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/moviefirebase/ui/main/search/SearchViewModel.kt">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/moviefirebase/model/model/firebase/MovieDbEntity.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="142">
-              <caret line="40" selection-start-line="40" selection-end-line="40" />
+            <state relative-caret-position="99">
+              <caret line="23" selection-start-line="23" selection-end-line="23" />
+              <folding>
+                <element signature="e#56#157#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/moviefirebase/ui/main/search/SearchFragment.kt">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/moviefirebase/ui/main/library/AddMovieActivity.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="50">
-              <caret line="40" selection-start-line="40" selection-end-line="40" />
+            <state relative-caret-position="17">
+              <caret line="33" column="28" lean-forward="true" selection-start-line="33" selection-start-column="28" selection-end-line="33" selection-end-column="28" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/moviefirebase/ui/main/SearchAdapter.kt">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_all_movies.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="48" column="17" selection-start-line="48" selection-start-column="17" selection-end-line="48" selection-end-column="17" />
+            <state relative-caret-position="204">
+              <caret line="12" column="44" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/moviefirebase/ui/main/MovieAdapter.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="18" column="26" lean-forward="true" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/build.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="219">
-              <caret line="29" selection-start-line="29" selection-end-line="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/build.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-6">
-              <caret line="56" column="65" selection-start-line="56" selection-start-column="65" selection-end-line="56" selection-end-column="65" />
-            </state>
-          </provider>
+          <provider editor-type-id="android-designer2" />
         </entry>
       </file>
     </leaf>
@@ -175,22 +221,13 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/main_fragment.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_library.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_settings.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/main_activity.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/moviefirebase/ui/main/library/AllMoviesFragment.kt" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_unwatched_movies.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_watched_movies.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/moviefirebase/ui/main/LibraryFragment.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/res/values/styles.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/colors.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/movie_row.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/moviefirebase/model/model/firebase/FirebaseInstance.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/moviefirebase/ui/main/ListPagerAdapter.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/moviefirebase/ui/main/library/LibraryFragment.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/library_fragment.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/movie_row_library.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/drawable/ic_eye_yellow.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/moviefirebase/ui/main/library/tabs/WatchedMoviesFragment.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/moviefirebase/ui/main/library/tabs/AllMoviesViewModel.kt" />
@@ -201,31 +238,40 @@
         <option value="$PROJECT_DIR$/app/src/main/res/drawable/ic_eye.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_seen_movies.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_to_see_movies.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_all_movies.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/moviefirebase/ui/main/library/tabs/ToSeeMoviesFragment.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/moviefirebase/MainActivity.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/moviefirebase/ui/main/MovieAdapter.kt" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_movie_details.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/content_movie.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/moviefirebase/ui/main/MovieDetailsActivity.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/moviefirebase/model/model/movie_api/MovieModel.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/moviefirebase/model/model/movie_api/MovieEntity.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/moviefirebase/model/model/firebase/MovieDB.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/moviefirebase/model/model/movie_api/MovieApi.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/moviefirebase/model/model/movie_api/MovieApiEntity.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/moviefirebase/model/model/movie_api/ApiConnection.kt" />
-        <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/moviefirebase/model/model/movie_api/MovieService.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/moviefirebase/model/model/movie_api/MovieSearchResponse.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/moviefirebase/model/model/movie_api/MovieSearch.kt" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/movie_row_search.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/moviefirebase/ui/main/SearchAdapter.kt" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/search_fragment.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/moviefirebase/ui/main/search/SearchFragment.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/moviefirebase/ui/main/SearchAdapter.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/moviefirebase/model/model/movie_api/SearchApi.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/moviefirebase/model/model/movie_api/MovieApiEntity.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/moviefirebase/model/model/movie_api/MovieSearch.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/moviefirebase/model/model/movie_api/MovieSearchResponse.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/moviefirebase/model/model/movie_api/MovieService.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/moviefirebase/ui/main/search/SearchViewModel.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/moviefirebase/ui/main/search/SearchFragment.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/moviefirebase/ui/main/library/LibraryFragment.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/moviefirebase/MainActivity.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/res/menu/bottom_navigation.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/library_fragment.xml" />
+        <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values/styles.xml" />
         <option value="$PROJECT_DIR$/app/build.gradle" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_add_movie.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/moviefirebase/ui/main/library/AddMovieActivity.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/movie_row_library.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_all_movies.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/moviefirebase/model/model/firebase/MovieDbEntity.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/moviefirebase/ui/main/MovieDetailsActivity.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/content_movie.xml" />
       </list>
     </option>
   </component>
@@ -241,8 +287,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane" />
-      <pane id="Scope" />
       <pane id="AndroidView">
         <subPane>
           <expand>
@@ -260,21 +304,6 @@
               <item name="app" type="feadf853:AndroidModuleNode" />
               <item name="java" type="edd41e36:AndroidSourceTypeNode" />
               <item name="moviefirebase" type="cbb59c9e:AndroidPsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MovieFirebase" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="moviefirebase" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MovieFirebase" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="moviefirebase" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-              <item name="movie_api" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="MovieFirebase" type="1abcf292:AndroidViewProjectNode" />
@@ -303,14 +332,6 @@
             <path>
               <item name="MovieFirebase" type="1abcf292:AndroidViewProjectNode" />
               <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="moviefirebase" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="search" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MovieFirebase" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
               <item name="res" type="d4f16f75:AndroidResFolderNode" />
             </path>
             <path>
@@ -327,13 +348,15 @@
           <select />
         </subPane>
       </pane>
+      <pane id="ProjectPane" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
-    <property name="last_opened_file_path" value="$USER_HOME$/AndroidStudioProjects/CookWithPuppy" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="not.eligible.for.single.variant.sync" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="show.migrate.to.gradle.popup" value="false" />
@@ -344,13 +367,14 @@
       <recent name="D:\STUDIA\VI\MIM\MovieFirebase\app\src\main\res\layout" />
     </key>
     <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="com.example.moviefirebase.adapters" />
       <recent name="com.example.moviefirebase.ui.main.settings" />
       <recent name="com.example.moviefirebase.ui.main.search" />
       <recent name="com.example.moviefirebase.ui.main.library.tabs" />
       <recent name="com.example.moviefirebase.ui.main.library" />
-      <recent name="com.example.moviefirebase.model.movie_api.movie_api" />
     </key>
     <key name="android.template.packageName">
+      <recent name="com.example.moviefirebase.ui.main.library" />
       <recent name="com.example.moviefirebase.ui.main" />
     </key>
     <key name="android.template.parentActivityClass">
@@ -477,10 +501,10 @@
       <window_info anchor="bottom" id="Android Profiler" order="3" />
       <window_info anchor="bottom" id="Terminal" order="4" weight="0.32777777" />
       <window_info anchor="bottom" id="Event Log" order="5" side_tool="true" />
-      <window_info anchor="bottom" id="Build" order="6" weight="0.27037036" />
-      <window_info anchor="bottom" id="Run" order="7" weight="0.3" />
-      <window_info anchor="bottom" id="Debug" order="8" visible="true" weight="0.46296296" />
-      <window_info anchor="bottom" id="Find" order="9" />
+      <window_info anchor="bottom" id="Build" order="6" weight="0.5796296" />
+      <window_info anchor="bottom" id="Run" order="7" weight="0.36666667" />
+      <window_info anchor="bottom" id="Debug" order="8" visible="true" weight="0.12222222" />
+      <window_info anchor="bottom" id="Find" order="9" weight="0.65555555" />
       <window_info anchor="right" id="Device File Explorer" order="0" side_tool="true" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
       <window_info anchor="right" id="Gradle" order="2" />
@@ -492,103 +516,63 @@
       <window_info anchor="right" id="Assistant" order="8" weight="0.5433198" />
       <window_info anchor="right" id="Preview" order="9" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.20890689" />
+      <window_info id="Structure" order="2" side_tool="true" />
+      <window_info id="Build Variants" order="3" side_tool="true" />
+      <window_info id="Image Layers" order="4" />
+      <window_info id="Designer" order="5" />
+      <window_info id="Resources Explorer" order="6" />
+      <window_info id="Capture Tool" order="7" />
+      <window_info id="Favorites" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="0" />
+      <window_info anchor="bottom" id="Logcat" order="1" weight="0.22222222" />
+      <window_info anchor="bottom" id="TODO" order="2" weight="0.32962963" />
+      <window_info anchor="bottom" id="Android Profiler" order="3" />
+      <window_info anchor="bottom" id="Terminal" order="4" weight="0.32777777" />
+      <window_info anchor="bottom" id="Event Log" order="5" side_tool="true" />
+      <window_info anchor="bottom" id="Build" order="6" weight="0.27037036" />
+      <window_info anchor="bottom" id="Run" order="7" weight="0.3" />
+      <window_info anchor="bottom" id="Debug" order="8" visible="true" weight="0.47592592" />
+      <window_info anchor="bottom" id="Find" order="9" />
+      <window_info anchor="right" id="Device File Explorer" order="0" side_tool="true" />
+      <window_info anchor="right" id="Capture Analysis" order="1" />
+      <window_info anchor="right" id="Gradle" order="2" />
+      <window_info anchor="right" id="Theme Preview" order="3" />
+      <window_info anchor="right" id="Flutter Inspector" order="4" />
+      <window_info anchor="right" id="Flutter Outline" order="5" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info anchor="right" id="Flutter Performance" order="7" />
+      <window_info anchor="right" id="Assistant" order="8" weight="0.5433198" />
+      <window_info anchor="right" id="Preview" order="9" />
+    </layout-to-restore>
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/moviefirebase/ui/main/search/SearchViewModel.kt</url>
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/moviefirebase/model/model/firebase/MovieDbEntity.kt</url>
+          <line>20</line>
+          <properties />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/moviefirebase/model/model/firebase/MovieDbEntity.kt</url>
+          <line>21</line>
+          <properties />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/moviefirebase/model/model/firebase/MovieDbEntity.kt</url>
           <line>23</line>
           <properties />
           <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/moviefirebase/ui/main/search/SearchViewModel.kt</url>
-          <line>33</line>
-          <properties />
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/moviefirebase/ui/main/search/SearchViewModel.kt</url>
-          <line>40</line>
-          <properties />
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/moviefirebase/ui/main/search/SearchFragment.kt</url>
-          <line>40</line>
-          <properties />
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/moviefirebase/ui/main/search/SearchFragment.kt</url>
-          <line>39</line>
-          <properties />
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/moviefirebase/ui/main/search/SearchFragment.kt</url>
-          <line>38</line>
-          <properties />
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/moviefirebase/ui/main/search/SearchViewModel.kt</url>
-          <line>26</line>
-          <properties />
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/moviefirebase/ui/main/search/SearchViewModel.kt</url>
-          <line>38</line>
-          <properties />
-          <option name="timeStamp" value="15" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/moviefirebase/ui/main/settings/SettingsFragment.kt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/settings_fragment.xml">
-      <provider editor-type-id="android-designer2" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="17" lean-forward="true" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/movie_list.xml" />
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.fragment/fragment/1.1.0/b9ebb04df2cb0cad4419af3c658690bc82aa5706/fragment-1.1.0-sources.jar!/androidx/fragment/app/Fragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="622" column="16" selection-start-line="622" selection-start-column="16" selection-end-line="622" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/main_activity.xml">
-      <provider editor-type-id="android-designer2" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="53" lean-forward="true" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/styles.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="47" selection-start-line="6" selection-start-column="47" selection-end-line="6" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/moviefirebase/ui/main/MainViewModel.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e2ca05d3fc84a13bd91d5c0fcf546b43/firebase-database-19.3.0/jars/classes.jar!/com/google/firebase/database/FirebaseDatabase.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -597,21 +581,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/moviefirebase/model/model/firebase/FirebaseInstance.kt" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/moviefirebase/ui/main/library/LibraryFragment.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="36" column="45" selection-start-line="36" selection-start-column="45" selection-end-line="36" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/library_fragment.xml">
-      <provider editor-type-id="android-designer2" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="42" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e2ca05d3fc84a13bd91d5c0fcf546b43/firebase-database-19.3.0/jars/classes.jar!/com/google/firebase/database/core/utilities/encoding/CustomClassMapper.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="157">
@@ -619,7 +588,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/moviefirebase/ui/main/ListPagerAdapter.kt">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/moviefirebase/adapters/ListPagerAdapter.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="437">
           <caret line="31" column="1" selection-start-line="31" selection-start-column="1" selection-end-line="31" selection-end-column="1" />
@@ -633,14 +602,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="34" selection-start-line="6" selection-start-column="34" selection-end-line="6" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/movie_row_library.xml">
-      <provider selected="true" editor-type-id="android-designer2" />
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="36" column="36" selection-start-line="36" selection-start-column="36" selection-end-line="36" selection-end-column="36" />
         </state>
       </provider>
     </entry>
@@ -662,30 +623,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="19" column="52" selection-start-line="19" selection-start-column="52" selection-end-line="19" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_to_see_movies.xml">
-      <provider editor-type-id="android-designer2" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_all_movies.xml">
-      <provider editor-type-id="android-designer2" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_seen_movies.xml">
-      <provider editor-type-id="android-designer2" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="52" selection-start-line="15" selection-start-column="52" selection-end-line="15" selection-end-column="52" />
         </state>
       </provider>
     </entry>
@@ -731,28 +668,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_movie_details.xml">
-      <provider editor-type-id="android-designer2" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="46" selection-start-line="15" selection-start-column="46" selection-end-line="15" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/moviefirebase/MainActivity.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="55" column="5" selection-start-line="55" selection-start-column="5" selection-end-line="55" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/moviefirebase/ui/main/library/tabs/SeenMoviesViewModel.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
@@ -760,13 +675,6 @@
           <folding>
             <element signature="e#56#268#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/moviefirebase/model/model/firebase/MovieDbEntity.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
@@ -778,13 +686,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/moviefirebase/ui/main/MovieDetailsActivity.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="884">
-          <caret line="61" column="17" selection-start-line="61" selection-start-column="17" selection-end-line="61" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
       <provider editor-type-id="android-manifest" />
       <provider selected="true" editor-type-id="text-editor">
@@ -793,116 +694,264 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/content_movie.xml">
-      <provider selected="true" editor-type-id="android-designer2" />
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="1241">
-          <caret line="73" column="4" selection-start-line="73" selection-start-column="4" selection-end-line="73" selection-end-column="4" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/movie_row_search.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="46" column="32" lean-forward="true" selection-start-line="46" selection-start-column="32" selection-end-line="46" selection-end-column="32" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/search_fragment.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="40" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/moviefirebase/adapters/MovieAdapter.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="18" column="26" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/moviefirebase/model/model/movie_api/MovieApiEntity.kt">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/moviefirebase/model/model/movie_api/SearchApi.kt" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/moviefirebase/ui/main/search/SearchViewModel.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="28" column="1" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
+        <state relative-caret-position="34">
+          <caret line="2" column="35" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/moviefirebase/adapters/SearchAdapter.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
+        <state relative-caret-position="85">
+          <caret line="18" column="67" selection-start-line="18" selection-start-column="67" selection-end-line="18" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/moviefirebase/model/model/movie_api/MovieSearchResponse.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="70">
+          <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/moviefirebase/ui/main/search/SearchFragment.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="28" column="58" selection-start-line="28" selection-start-column="58" selection-end-line="28" selection-end-column="58" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/moviefirebase/model/model/movie_api/MovieSearch.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
-          <caret line="18" column="26" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
+          <caret line="18" column="21" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/moviefirebase/model/model/movie_api/MovieSearchResponse.kt">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/moviefirebase/model/model/movie_api/MovieApiEntity.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        <state relative-caret-position="430">
+          <caret line="27" column="20" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/moviefirebase/model/model/movie_api/MovieService.kt">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="19" column="26" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
-          <folding>
-            <element signature="e#57#283#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="357">
+          <caret line="21" column="41" lean-forward="true" selection-start-line="21" selection-start-column="41" selection-end-line="21" selection-end-column="41" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/moviefirebase/ui/main/library/tabs/AllMoviesViewModel.kt">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/bottom_navigation.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="75" />
+        <state relative-caret-position="170">
+          <caret line="10" column="51" lean-forward="true" selection-start-line="8" selection-start-column="7" selection-end-line="10" selection-end-column="51" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/moviefirebase/ui/main/library/tabs/AllMoviesFragment.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="47" column="14" selection-start-line="47" selection-start-column="14" selection-end-line="47" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/movie_row_search.xml">
       <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/main_activity.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="27" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/moviefirebase/MainActivity.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
-          <caret line="46" column="32" lean-forward="true" selection-start-line="46" selection-start-column="32" selection-end-line="46" selection-end-column="32" />
+          <caret line="24" column="53" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="53" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/search_fragment.xml">
-      <provider editor-type-id="android-designer2" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/styles.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="40" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/moviefirebase/ui/main/MovieAdapter.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="18" column="26" lean-forward="true" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/moviefirebase/ui/main/SearchAdapter.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="48" column="17" selection-start-line="48" selection-start-column="17" selection-end-line="48" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/moviefirebase/ui/main/search/SearchFragment.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="40" selection-start-line="40" selection-end-line="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/moviefirebase/ui/main/search/SearchViewModel.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="40" selection-start-line="40" selection-end-line="40" />
+        <state relative-caret-position="221">
+          <caret line="13" column="12" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-6">
-          <caret line="56" column="65" selection-start-line="56" selection-start-column="65" selection-end-line="56" selection-end-column="65" />
+        <state relative-caret-position="952">
+          <caret line="56" column="55" selection-start-line="56" selection-start-column="55" selection-end-line="56" selection-end-column="55" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_add_movie.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="17" column="40" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="40" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/moviefirebase/model/model/movie_api/MovieService.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="107">
+          <caret line="14" column="34" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="34" />
+          <folding>
+            <element signature="e#57#186#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="23" column="41" selection-start-line="23" selection-start-column="41" selection-end-line="23" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/movie_row_library.xml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="36" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="36" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/library_fragment.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="42" selection-start-line="22" selection-start-column="42" selection-end-line="22" selection-end-column="42" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_to_see_movies.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="44" lean-forward="true" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_all_movies.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="44" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout-v26/content_movie.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-39">
+          <caret line="65" column="27" selection-start-line="65" selection-start-column="27" selection-end-line="65" selection-end-column="27" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_movie_details.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="32" lean-forward="true" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_seen_movies.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="52" selection-start-line="15" selection-start-column="52" selection-end-line="15" selection-end-column="52" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/moviefirebase/ui/main/library/AddMovieActivity.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="33" column="28" lean-forward="true" selection-start-line="33" selection-start-column="28" selection-end-line="33" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/moviefirebase/ui/main/library/LibraryFragment.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="44" column="38" selection-start-line="44" selection-start-column="38" selection-end-line="44" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/moviefirebase/ui/main/library/tabs/AllMoviesFragment.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="107">
+          <caret line="38" column="22" selection-start-line="38" selection-start-column="22" selection-end-line="38" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/moviefirebase/ui/main/library/tabs/AllMoviesViewModel.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="33" column="64" lean-forward="true" selection-start-line="33" selection-start-column="29" selection-end-line="33" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/moviefirebase/model/model/firebase/MovieDbEntity.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="99">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+          <folding>
+            <element signature="e#56#157#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/moviefirebase/ui/main/MovieDetailsActivity.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="477">
+          <caret line="105" selection-start-line="105" selection-end-line="105" />
+          <folding>
+            <element signature="e#43#443#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/content_movie.xml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="31" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
+          <folding>
+            <element signature="e#541#581#0" expanded="true" />
+            <element signature="e#1429#1448#0" expanded="true" />
+            <element signature="e#1867#1892#0" expanded="true" />
+            <element signature="e#2303#2321#0" expanded="true" />
+            <element signature="e#2738#2756#0" expanded="true" />
+            <element signature="e#3167#3186#0" expanded="true" />
+            <element signature="e#3644#3666#0" expanded="true" />
+            <element signature="e#4078#4098#0" expanded="true" />
+            <element signature="e#4607#4629#0" expanded="true" />
+            <element signature="e#5283#5305#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer2" />
     </entry>
   </component>
 </project>

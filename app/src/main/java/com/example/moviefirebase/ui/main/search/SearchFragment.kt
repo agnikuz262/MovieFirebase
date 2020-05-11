@@ -6,23 +6,13 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
-
 import com.example.moviefirebase.R
-import com.example.moviefirebase.ui.main.SearchAdapter
-import com.google.android.gms.tasks.Tasks.await
-import kotlinx.android.synthetic.main.search_fragment.*
+import com.example.moviefirebase.adapters.SearchAdapter
 
 class SearchFragment : Fragment() {
 
-    companion object {
-        fun newInstance() =
-            SearchFragment()
-    }
-
     private lateinit var viewModel: SearchViewModel
-    private  lateinit var adapter : SearchAdapter
+    private lateinit var adapter: SearchAdapter
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -35,10 +25,14 @@ class SearchFragment : Fragment() {
         super.onActivityCreated(savedInstanceState)
         viewModel = ViewModelProviders.of(this).get(SearchViewModel::class.java)
 
-        val movieList = viewModel.getSearchedMovies()
-        adapter = SearchAdapter(movieList, requireContext(), this)
-        recycler_search.adapter = adapter
-        recycler_search.layoutManager = LinearLayoutManager(activity, RecyclerView.VERTICAL, false)
+
+//        val response = viewModel.getSearchFromApi("How")
+//
+//        adapter = SearchAdapter(response.list!!, requireContext())
+//        recycler_search.adapter = adapter
+//        recycler_search.layoutManager =
+//            LinearLayoutManager(activity, RecyclerView.VERTICAL, false)
+
 
     }
 

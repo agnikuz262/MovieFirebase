@@ -15,4 +15,13 @@
     <string name="poster_image">poster image</string>
     <string name="delete_button">delete button</string>
     <string name="title_activity_movie">MovieActivity</string>
+
+    <string name="add_title">Title</string>
+    <string name="add_year">Year</string>
+    <string name="add_description">Description</string>
+    <string name="add_rate">Rate</string>
+    <string name="add_director">Director</string>
+    <string name="add_actors">Actors</string>
+    <string name="add_genre">Genre</string>
+    <string name="save_changes">Save changes</string>
 </resources>

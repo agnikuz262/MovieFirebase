@@ -42,10 +42,10 @@ class MainActivity : AppCompatActivity() {
                     fragment =
                         SearchFragment()
                 }
-                R.id.menu_settings -> {
-                    fragment =
-                        SettingsFragment()
-                }
+//                R.id.menu_settings -> {
+//                    fragment =
+//                        SettingsFragment()
+//                }
             }
 
             supportFragmentManager.beginTransaction().replace(R.id.fragment_container, fragment)

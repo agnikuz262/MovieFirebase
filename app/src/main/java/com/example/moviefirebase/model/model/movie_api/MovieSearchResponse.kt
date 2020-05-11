@@ -1,12 +1,13 @@
 package com.example.moviefirebase.model.model.movie_api
 
-import com.squareup.moshi.Json
+import com.google.gson.annotations.SerializedName
+
 
 class MovieSearchResponse {
-    @Json(name = "Response")
+    @SerializedName("Response")
     val response: String? = ""
 
-    @Json(name = "Search")
+    @SerializedName("Search")
     val list: List<MovieSearch>? = null
 
     val totalResults: String? = ""

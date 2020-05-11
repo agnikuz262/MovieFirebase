@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.library.AddMovieActivity">
+
+    <EditText
+        android:id="@+id/add_rate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginBottom="19dp"
+        android:ems="10"
+        android:hint="@string/add_rate"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toTopOf="@+id/add_director"
+        app:layout_constraintEnd_toEndOf="@+id/add_director"
+        app:layout_constraintStart_toStartOf="@+id/add_director"
+        app:layout_constraintTop_toBottomOf="@+id/add_description" />
+
+    <EditText
+        android:id="@+id/add_year"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginBottom="18dp"
+        android:ems="10"
+        android:hint="@string/add_year"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/add_description"
+        app:layout_constraintEnd_toEndOf="@+id/add_description"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/add_description"
+        app:layout_constraintTop_toBottomOf="@+id/add_title" />
+
+    <EditText
+        android:id="@+id/add_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginBottom="31dp"
+        android:ems="10"
+        android:hint="@string/add_description"
+        android:inputType="textCapSentences"
+        app:layout_constraintBottom_toTopOf="@+id/add_rate"
+        app:layout_constraintEnd_toEndOf="@+id/add_rate"
+        app:layout_constraintStart_toStartOf="@+id/add_rate"
+        app:layout_constraintTop_toBottomOf="@+id/add_year" />
+
+    <EditText
+        android:id="@+id/add_director"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginBottom="35dp"
+        android:ems="10"
+        android:hint="@string/add_director"
+        android:inputType="textCapWords"
+        app:layout_constraintBottom_toTopOf="@+id/add_actors"
+        app:layout_constraintEnd_toEndOf="@+id/add_actors"
+        app:layout_constraintStart_toStartOf="@+id/add_actors"
+        app:layout_constraintTop_toBottomOf="@+id/add_rate" />
+
+    <EditText
+        android:id="@+id/add_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:hint="@string/add_title"
+        android:inputType="textCapSentences"
+        app:layout_constraintEnd_toEndOf="@+id/add_year"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/add_year"
+        app:layout_constraintTop_toBottomOf="@+id/add_poster" />
+
+    <ImageView
+        android:id="@+id/add_poster"
+        android:layout_width="98dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="49dp"
+        android:layout_marginBottom="87dp"
+        app:layout_constraintBottom_toTopOf="@+id/add_title"
+        app:layout_constraintEnd_toEndOf="@+id/add_title"
+        app:layout_constraintStart_toStartOf="@+id/add_title"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_add_a_photo" />
+
+    <EditText
+        android:id="@+id/add_actors"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:hint="@string/add_actors"
+        android:inputType="textCapWords"
+        app:layout_constraintBottom_toTopOf="@+id/add_genre"
+        app:layout_constraintEnd_toEndOf="@+id/add_genre"
+        app:layout_constraintStart_toStartOf="@+id/add_genre"
+        app:layout_constraintTop_toBottomOf="@+id/add_director" />
+
+    <EditText
+        android:id="@+id/add_genre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="76dp"
+        android:ems="10"
+        android:inputType="textCapWords"
+        android:hint="@string/add_genre"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/add_actors" />
+
+    <Button
+        android:id="@+id/add_movie_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/add_genre" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
