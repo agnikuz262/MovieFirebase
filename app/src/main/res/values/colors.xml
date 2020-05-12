@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#1b5e20</color>
-    <color name="colorPrimaryDark">#003300</color>
-    <color name="colorAccent">#ffca28</color>
-    <color name="white">#FFFFFF</color>
+    <color name="lightPrimaryDark">#223D0F</color>
+    <color name="lightPrimary">#205818</color>
+    <color name="lightAccent">#ffca28</color>
+
+    <color name="darkPrimaryDark">#c97b63</color>
+    <color name="darkPrimary">#ffab91</color>
+    <color name="darkAccent">#ffca28</color>
+
+    <color name="darkStatusBar">#121212</color>
+
 </resources>

@@ -41,7 +41,5 @@ class SearchFragment : Fragment() {
             adapter = SearchAdapter(searchedMovies.list!!, requireContext())
             recycler_search.adapter = adapter
         }
-
-
     }
 }

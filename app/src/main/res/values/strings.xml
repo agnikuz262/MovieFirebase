@@ -24,4 +24,6 @@
     <string name="add_actors">Actors</string>
     <string name="add_genre">Genre</string>
     <string name="save_changes">Save changes</string>
+    <string name="search">Search...</string>
+    <string name="search_button">Search button</string>
 </resources>
