@@ -1,21 +1,22 @@
 package com.example.moviefirebase.model.model.movie_api
 
-import com.google.gson.annotations.SerializedName
+import com.squareup.moshi.Json
+import com.squareup.moshi.JsonClass
 
+@JsonClass(generateAdapter = true)
+data class MovieSearch(
+    @Json(name = "Poster")
+    val poster: String? = "",
 
-class MovieSearch {
-    @SerializedName("Poster")
-    val poster: String? = ""
+    @Json(name = "Title")
+    val title: String? = "",
 
-    @SerializedName("Title")
-    val title: String? = ""
+    @Json(name = "Year")
+    val year: String? = "",
 
-    @SerializedName("Year")
-    val year: String? = ""
+    @Json(name = "imdbID")
+    val dbId: String? = "",
 
-    @SerializedName("imdbID")
-    val dbId: String? = ""
-
-    @SerializedName("Type")
+    @Json(name = "Type")
     val type: String? = ""
-}
+)
