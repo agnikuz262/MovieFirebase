@@ -40,10 +40,6 @@ class LibraryFragment : Fragment() {
         val tabLayout = view.findViewById<TabLayout>(R.id.tab_layout)
         tabLayout.setupWithViewPager(viewPager)
 
-        fab_add.setOnClickListener {
-            val intent = Intent(requireContext(), AddMovieActivity::class.java).apply {}
-            this.startActivity(intent)
-        }
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {

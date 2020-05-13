@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="lightPrimaryDark">#223D0F</color>
-    <color name="lightPrimary">#205818</color>
-    <color name="lightAccent">#ffca28</color>
+    <color name="lightPrimaryVar">#4c8c4a</color>
+    <color name="lightPrimary">#1b5e20</color>
 
-    <color name="darkPrimaryDark">#c97b63</color>
-    <color name="darkPrimary">#ffab91</color>
-    <color name="darkAccent">#ffca28</color>
+    <color name="lightSecondary">#4c8c4a</color>
+    <color name="lightSecondaryVar">#ffff81</color>
+
+    <color name="darkPrimaryVar">#dce775</color>
+    <color name="darkPrimary">#dce775</color>
+
+    <color name="darkSecondary">#dce775</color>
 
     <color name="darkStatusBar">#121212</color>
-
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
 </resources>

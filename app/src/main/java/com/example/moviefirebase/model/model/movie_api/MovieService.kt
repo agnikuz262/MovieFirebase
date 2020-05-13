@@ -8,13 +8,14 @@ import retrofit2.converter.moshi.MoshiConverterFactory
 class MovieService {
     private val apiKey = "b8157f77"
     private val baseUrl = "https://www.omdbapi.com/?apikey=$apiKey&s="
-//  //  val searchWords = typedSearch.split(" ".toRegex())
-//    var url = baseUrl
-//    for (i in searchWords)
-//    url += "$i&"
 
-    fun getApiMovies(searchWords: String) : MovieApiClient {
-        val url = baseUrl + searchWords
+    fun getApiMovies(typedSearch: String): MovieApiClient {
+
+        val searchWords = typedSearch.split(" ".toRegex())
+        var url = baseUrl
+        for (word in searchWords)
+            url += "$word&"
+
         val retrofit =
             Retrofit.Builder().baseUrl(url).addConverterFactory(MoshiConverterFactory.create())
                 .addCallAdapterFactory(CoroutineCallAdapterFactory()).build()

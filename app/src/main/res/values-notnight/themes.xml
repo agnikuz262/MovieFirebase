@@ -4,8 +4,12 @@
     <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
 
         <item name="colorPrimary">@color/lightPrimary</item>
-        <item name="colorPrimaryDark">@color/lightPrimaryDark</item>
-        <item name="colorAccent">@color/lightAccent</item>
+        <item name="colorPrimaryVariant">@color/lightPrimaryVar</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/lightSecondary</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <item name="colorSecondaryVariant">@color/lightSecondaryVar</item>
+
         <item name="android:statusBarColor" tools:targetApi="lollipop">@android:color/white</item>
         <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
     </style>

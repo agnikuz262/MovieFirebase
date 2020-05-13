@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">MovieFirebase</string>
+    <string name="app_name">Movies</string>
     <string name="update_user_info">update user</string>
     <string name="dummy_name">My name</string>
     <string name="dummy_mobile">My mobile</string>
@@ -26,4 +26,5 @@
     <string name="save_changes">Save changes</string>
     <string name="search">Search...</string>
     <string name="search_button">Search button</string>
+    <string name="add">Add</string>
 </resources>
