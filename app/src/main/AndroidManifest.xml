@@ -12,7 +12,8 @@
         android:roundIcon="@mipmap/ic_popcorn_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.main.library.AddMovieActivity"></activity>
+        <activity android:name=".ui.main.SearchDetailsActivity"></activity>
+        <activity android:name=".ui.main.library.AddMovieActivity" />
         <activity
             android:name=".ui.main.MovieDetailsActivity"
             android:label="@string/title_activity_movie" />

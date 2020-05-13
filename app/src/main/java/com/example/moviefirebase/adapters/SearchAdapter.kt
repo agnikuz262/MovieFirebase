@@ -1,23 +1,35 @@
 package com.example.moviefirebase.adapters
 
 import android.content.Context
+import android.content.Intent
 import android.os.Build
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageButton
-import android.widget.ImageView
-import android.widget.TextView
+import android.widget.*
 import androidx.annotation.RequiresApi
 import androidx.recyclerview.widget.RecyclerView
+import com.example.moviefirebase.MainActivity
 import com.example.moviefirebase.R
 import com.example.moviefirebase.model.model.movie_api.MovieSearch
+import com.example.moviefirebase.model.model.movie_api.MovieService
+import com.example.moviefirebase.ui.main.MovieDetailsActivity
+import com.example.moviefirebase.ui.main.SearchDetailsActivity
+import com.google.firebase.database.DatabaseReference
+import com.google.firebase.database.FirebaseDatabase
 import com.squareup.picasso.Picasso
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.launch
 
 class SearchAdapter(
     private val searchList: List<MovieSearch>, val context: Context
 ) :
     RecyclerView.Adapter<SearchAdapter.ViewHolder>() {
+
+    private val dbReference: DatabaseReference =
+        FirebaseDatabase.getInstance().getReference("movies")
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val inflater: LayoutInflater = LayoutInflater.from(parent.context)
@@ -44,7 +56,25 @@ class SearchAdapter(
             }
         }
         holder.addButtonView.setOnClickListener {
-           //todo
+            GlobalScope.launch(Dispatchers.Main) {
+                val movieApiEntity = MovieService().getMovie(searchList[position].title!!)
+                    .getMovieAsync().await()
+
+                if(movieApiEntity.isSuccessful) {
+                    val movieDbEntity = movieApiEntity.body()
+                } else {
+                    Log.e("TAG", "Fetching movie in SearchAdapter error")
+                    Toast.makeText(context, "Something went wrong", Toast.LENGTH_SHORT).show()
+                }
+            }
+        }
+
+        holder.searchRowView.setOnClickListener {
+
+            val intent = Intent(context, SearchDetailsActivity::class.java).apply {
+                putExtra("title", searchList[position].title)
+            }
+            (context as MainActivity).startActivity(intent)
         }
     }
 
@@ -54,5 +84,6 @@ class SearchAdapter(
         val yearView = view.findViewById<TextView>(R.id.year)
         val posterView = view.findViewById<ImageView>(R.id.poster_row)
         val addButtonView = view.findViewById<ImageButton>(R.id.add_button)
+        val searchRowView = view.findViewById<LinearLayout>(R.id.search_row)
     }
 }

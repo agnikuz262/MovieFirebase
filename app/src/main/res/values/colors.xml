@@ -4,7 +4,7 @@
     <color name="lightPrimary">#1b5e20</color>
 
     <color name="lightSecondary">#4c8c4a</color>
-    <color name="lightSecondaryVar">#ffff81</color>
+    <color name="lightSecondaryVar">#4c8c4a</color>
 
     <color name="darkPrimaryVar">#dce775</color>
     <color name="darkPrimary">#dce775</color>

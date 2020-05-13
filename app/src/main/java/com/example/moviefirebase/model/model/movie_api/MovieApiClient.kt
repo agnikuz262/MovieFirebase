@@ -6,5 +6,7 @@ import retrofit2.http.GET
 
 interface MovieApiClient {
     @GET(" ")
-    fun getMoviesAsync(): Deferred<Response<MovieSearchResponse>>
+    fun getSearchMoviesAsync(): Deferred<Response<MovieSearchResponse>>
+    @GET(" ")
+    fun getMovieAsync(): Deferred<Response<MovieApiEntity>>
 }
