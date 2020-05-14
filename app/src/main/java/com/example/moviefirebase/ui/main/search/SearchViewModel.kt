@@ -8,12 +8,11 @@ class SearchViewModel : ViewModel() {
     var searchedMovies: MovieSearchResponse? = null
 
     suspend fun getSearchFromApi(typedSearch: String): MovieSearchResponse {
-            val apiResponse = MovieService().getSearchMovies(typedSearch).getSearchMoviesAsync().await()
+        val apiResponse = MovieService().getSearchMovies(typedSearch).getSearchMoviesAsync().await()
 
-            if (apiResponse.isSuccessful) {
-                searchedMovies = apiResponse.body()
-            }
-
+        if (apiResponse.isSuccessful) {
+            searchedMovies = apiResponse.body()
+        }
         return searchedMovies!!
     }
 }

@@ -77,7 +77,7 @@ class MovieAdapter(
             }
 
         }
-        //todo
+
         holder.movieRowView.setOnClickListener {
             val intent = Intent(context, MovieDetailsActivity::class.java).apply {
                 putExtra("id", movieList[position].id)

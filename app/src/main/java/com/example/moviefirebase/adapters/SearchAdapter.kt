@@ -12,9 +12,9 @@ import androidx.annotation.RequiresApi
 import androidx.recyclerview.widget.RecyclerView
 import com.example.moviefirebase.MainActivity
 import com.example.moviefirebase.R
+import com.example.moviefirebase.model.model.firebase.MovieDbEntity
 import com.example.moviefirebase.model.model.movie_api.MovieSearch
 import com.example.moviefirebase.model.model.movie_api.MovieService
-import com.example.moviefirebase.ui.main.MovieDetailsActivity
 import com.example.moviefirebase.ui.main.SearchDetailsActivity
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
@@ -22,6 +22,7 @@ import com.squareup.picasso.Picasso
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
+import java.util.*
 
 class SearchAdapter(
     private val searchList: List<MovieSearch>, val context: Context
@@ -57,11 +58,28 @@ class SearchAdapter(
         }
         holder.addButtonView.setOnClickListener {
             GlobalScope.launch(Dispatchers.Main) {
-                val movieApiEntity = MovieService().getMovie(searchList[position].title!!)
+                val movieApi = MovieService().getMovie(searchList[position].title!!)
                     .getMovieAsync().await()
 
-                if(movieApiEntity.isSuccessful) {
-                    val movieDbEntity = movieApiEntity.body()
+                if (movieApi.isSuccessful) {
+                    val movieApiEntity = movieApi.body()!!
+                    val date = Date().time
+                    val movie = MovieDbEntity(
+                        movieApiEntity.title,
+                        movieApiEntity.description,
+                        movieApiEntity.poster,
+                        movieApiEntity.director,
+                        movieApiEntity.actors,
+                        movieApiEntity.rate,
+                        false,
+                        date,
+                        movieApiEntity.genre,
+                        movieApiEntity.year
+                    )
+                    dbReference.child("$date").setValue(movie).addOnSuccessListener {
+                        Toast.makeText(context, "Movie added to library", Toast.LENGTH_SHORT)
+                            .show()
+                    }
                 } else {
                     Log.e("TAG", "Fetching movie in SearchAdapter error")
                     Toast.makeText(context, "Something went wrong", Toast.LENGTH_SHORT).show()

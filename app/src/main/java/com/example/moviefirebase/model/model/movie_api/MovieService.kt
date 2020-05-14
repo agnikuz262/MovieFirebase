@@ -13,8 +13,9 @@ class MovieService {
 
         val searchWords = typedSearch.split(" ".toRegex())
         var url = baseUrl + "s="
-        for (word in searchWords)
-            url += "$word&"
+        for (i in 0 until searchWords.size - 1)
+            url += searchWords[i] + "+"
+        url += searchWords[searchWords.size - 1]
 
         val retrofit =
             Retrofit.Builder().baseUrl(url).addConverterFactory(MoshiConverterFactory.create())
@@ -22,11 +23,13 @@ class MovieService {
         return retrofit.create(MovieApiClient::class.java)
     }
 
-    fun getMovie(title: String) : MovieApiClient {
+    fun getMovie(title: String): MovieApiClient {
         val movieWords = title.split(" ".toRegex())
         var url = baseUrl + "t="
-        for(word in movieWords)
-            url += "$word&"
+
+        for (i in 0 until movieWords.size - 1)
+            url += movieWords[i] + "+"
+        url += movieWords[movieWords.size - 1]
 
         val retrofit =
             Retrofit.Builder().baseUrl(url).addConverterFactory(MoshiConverterFactory.create())
