@@ -51,7 +51,7 @@
                                             <option name="values">
                                               <map>
                                                 <entry key="color" value="000000" />
-                                                <entry key="scalingPercent" value="37" />
+                                                <entry key="scalingPercent" value="45" />
                                               </map>
                                             </option>
                                           </PersistentState>
@@ -61,8 +61,8 @@
                                   </option>
                                   <option name="values">
                                     <map>
-                                      <entry key="foregroundImage" value="C:\Users\agaku\Downloads\popcorn_launcher.png" />
-                                      <entry key="outputName" value="ic_popcorn" />
+                                      <entry key="foregroundImage" value="C:\Users\agaku\Downloads\popcorn_fav.png" />
+                                      <entry key="outputName" value="ic_popcorn_fav" />
                                     </map>
                                   </option>
                                 </PersistentState>
