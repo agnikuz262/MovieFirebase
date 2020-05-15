@@ -1,7 +1,6 @@
 package com.example.moviefirebase.ui.main
 
 import android.os.Bundle
-import android.util.Log
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
@@ -83,6 +82,8 @@ class MovieDetailsActivity : AppCompatActivity() {
             val genre = details_genre.text.toString()
             //todo val poster = add_poster.text.toString()
             val rate = details_rate.text.toString()
+            val type = details_type.text.toString()
+            val country = details_country.text.toString()
 
             val updatedMovie = MovieDbEntity(
                 title,
@@ -94,7 +95,9 @@ class MovieDetailsActivity : AppCompatActivity() {
                 movie.seen,
                 movie.id,
                 genre,
-                year
+                year,
+                type,
+                country
             )
             val postMovie = updatedMovie.toMap()
             dbReference.child("$id").updateChildren(postMovie)

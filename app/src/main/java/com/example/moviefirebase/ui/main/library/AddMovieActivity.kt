@@ -43,6 +43,8 @@ class AddMovieActivity : AppCompatActivity() {
         val poster =
             "https://m.media-amazon.com/images/M/MV5BZWJjMDEzZjUtYWE1Yy00M2ZiLThlMmItODljNTAzODFiMzc2XkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_SX300.jpg"
         val rate = add_rate.text.toString()
+        val type = add_type.text.toString()
+        val country = add_country.text.toString()
 
         val movie = MovieDbEntity(
             title,
@@ -54,7 +56,9 @@ class AddMovieActivity : AppCompatActivity() {
             false,
             Date().time,
             genre,
-            year
+            year,
+            type,
+            country
         )
         dbReference.child("${Date().time}").setValue(movie)
     }

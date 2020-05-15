@@ -74,11 +74,15 @@ class SearchAdapter(
                         false,
                         date,
                         movieApiEntity.genre,
-                        movieApiEntity.year
+                        movieApiEntity.year,
+                        movieApiEntity.type,
+                        movieApiEntity.country
                     )
                     dbReference.child("$date").setValue(movie).addOnSuccessListener {
                         Toast.makeText(context, "Movie added to library", Toast.LENGTH_SHORT)
                             .show()
+
+                        holder.addButtonView.setImageDrawable(context.getDrawable(R.drawable.ic_add_full))
                     }
                 } else {
                     Log.e("TAG", "Fetching movie in SearchAdapter error")

@@ -67,7 +67,7 @@
             android:background="@null"
             android:contentDescription="@string/seen_button"
             android:padding="10dp"
-            app:srcCompat="@drawable/ic_eye" />
+            app:srcCompat="@drawable/ic_fav_check_empty" />
 
     </LinearLayout>
 

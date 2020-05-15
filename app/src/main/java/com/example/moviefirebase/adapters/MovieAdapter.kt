@@ -48,10 +48,10 @@ class MovieAdapter(
 
         when (movieList[position].seen) {
             true -> {
-                holder.seenButtonView.setImageDrawable(context.getDrawable(R.drawable.ic_eye_yellow))
+                holder.seenButtonView.setImageDrawable(context.getDrawable(R.drawable.ic_fav_check_full))
             }
             else -> {
-                holder.seenButtonView.setImageDrawable(context.getDrawable(R.drawable.ic_eye))
+                holder.seenButtonView.setImageDrawable(context.getDrawable(R.drawable.ic_fav_check_empty))
             }
         }
         if (movieList[position].poster != null) {

@@ -14,7 +14,9 @@ data class MovieDbEntity(
     var seen: Boolean? = false,
     var id: Long? = 0,
     var genre: String? = "",
-    var year: String? = ""
+    var year: String? = "",
+    var type: String? = "",
+    var country: String? = ""
 ) {
     @Exclude
     fun toMap(): Map<String, Any?> {
@@ -28,7 +30,9 @@ data class MovieDbEntity(
             "seen" to seen,
             "id" to id,
             "genre" to genre,
-            "year" to year
+            "year" to year,
+            "type" to type,
+            "country" to country
         )
     }
 }
