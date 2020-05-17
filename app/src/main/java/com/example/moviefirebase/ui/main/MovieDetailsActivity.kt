@@ -30,7 +30,7 @@ class MovieDetailsActivity : AppCompatActivity() {
 
                         details_title.setText(movie.title)
                         details_description.setText(movie.description)
-                        details_rate.setText(movie.rate)
+                        details_rate.setText(movie.rate + "/10")
                         details_director.setText(movie.director)
                         details_actors.setText(movie.actors)
                         details_year.setText(movie.year)

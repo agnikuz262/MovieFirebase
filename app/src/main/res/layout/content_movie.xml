@@ -16,36 +16,33 @@
 
         <EditText
             android:id="@+id/details_country"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="40dp"
-            android:layout_marginStart="40dp"
-            android:layout_marginLeft="40dp"
             android:hint="@string/add_country"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toEndOf="@+id/details_poster"
             app:layout_constraintTop_toBottomOf="@+id/label_country" />
 
         <EditText
             android:id="@+id/details_type"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="5dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginTop="24dp"
             android:hint="@string/add_type"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.101"
+            app:layout_constraintHorizontal_bias="0.115"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <ImageView
             android:id="@+id/details_poster"
-            android:layout_width="162dp"
-            android:layout_height="219dp"
-            android:layout_marginTop="32dp"
+            android:layout_width="163dp"
+            android:layout_height="223dp"
+            android:layout_marginTop="28dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.142"
+            app:layout_constraintHorizontal_bias="0.168"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/details_year"
             app:srcCompat="@drawable/ic_add_a_photo" />
@@ -54,10 +51,12 @@
             android:id="@+id/details_title"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="40dp"
-            android:layout_marginTop="12dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="20dp"
             android:hint="@string/add_title"
+            android:textSize="32dp"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.666"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/details_type" />
 
@@ -66,39 +65,37 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="40dp"
-            android:layout_marginTop="20dp"
             android:hint="@string/add_description"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/details_poster" />
+            app:layout_constraintTop_toBottomOf="@+id/label_description" />
 
         <TextView
             android:id="@+id/label_rate"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="32dp"
+            android:layout_marginTop="28dp"
             android:text="@string/rate"
+            android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.216"
+            app:layout_constraintHorizontal_bias="0.214"
             app:layout_constraintStart_toEndOf="@+id/details_poster"
             app:layout_constraintTop_toBottomOf="@+id/details_year" />
 
         <EditText
             android:id="@+id/details_rate"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="40dp"
-            android:layout_marginStart="40dp"
-            android:layout_marginLeft="40dp"
             android:hint="@string/add_rate"
+            android:textSize="24sp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toEndOf="@+id/details_poster"
             app:layout_constraintTop_toBottomOf="@+id/label_rate" />
 
         <EditText
             android:id="@+id/details_year"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="40dp"
             android:hint="@string/add_year"
@@ -111,23 +108,22 @@
             android:id="@+id/label_genre"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="6dp"
+            android:layout_marginTop="28dp"
             android:text="@string/add_genre"
+            android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.227"
-            app:layout_constraintStart_toEndOf="@+id/details_poster"
-            app:layout_constraintTop_toBottomOf="@+id/details_country" />
+            app:layout_constraintHorizontal_bias="0.107"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/details_poster" />
 
         <EditText
             android:id="@+id/details_genre"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="0dp"
             android:layout_marginHorizontal="40dp"
+            android:layout_height="wrap_content"
             android:hint="@string/add_genre"
-            android:inputType="textMultiLine"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toEndOf="@+id/details_poster"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/label_genre" />
 
         <TextView
@@ -136,6 +132,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
             android:text="@string/add_director"
+            android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.116"
             app:layout_constraintStart_toStartOf="parent"
@@ -156,12 +153,13 @@
             android:id="@+id/label_actors"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="68dp"
+            android:layout_marginTop="16dp"
             android:text="@string/add_actors"
+            android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.113"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/label_director" />
+            app:layout_constraintTop_toBottomOf="@+id/details_director" />
 
         <EditText
             android:id="@+id/details_actors"
@@ -203,12 +201,25 @@
             android:id="@+id/label_country"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="44dp"
             android:text="@string/add_country"
+            android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.243"
+            app:layout_constraintHorizontal_bias="0.245"
             app:layout_constraintStart_toEndOf="@+id/details_poster"
             app:layout_constraintTop_toBottomOf="@+id/details_rate" />
+
+        <TextView
+            android:id="@+id/label_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/add_description"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.124"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/details_genre" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

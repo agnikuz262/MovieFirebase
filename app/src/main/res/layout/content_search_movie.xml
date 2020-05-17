@@ -13,84 +13,207 @@
         tools:context=".ui.main.MovieDetailsActivity"
         tools:showIn="@layout/activity_movie_details">
 
-        <ImageView
-            android:contentDescription="@string/poster_image"
-            android:id="@+id/search_details_poster"
-            android:layout_width="130dp"
-            android:layout_height="179dp"
-            android:layout_marginTop="56dp"
+        <TextView
+            android:id="@+id/search_details_type"
+            android:layout_width="0dp"
+            android:layout_marginHorizontal="40dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/add_type"
+            android:textSize="17sp"
+            android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintHorizontal_bias="0.118"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/search_details_poster"
+            android:layout_width="145dp"
+            android:layout_height="205dp"
+            android:layout_marginTop="20dp"
+            android:contentDescription="@string/poster_image"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.18"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/search_details_year"
             app:srcCompat="@drawable/ic_search" />
+
+        <TextView
+            android:id="@+id/search_details_label_rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_rate"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.203"
+            app:layout_constraintStart_toEndOf="@+id/search_details_poster"
+            app:layout_constraintTop_toTopOf="@+id/search_details_poster" />
 
         <TextView
             android:id="@+id/search_details_title"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="40dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/add_title"
+            android:textSize="32sp"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/search_details_poster"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/search_details_poster" />
+            app:layout_constraintTop_toBottomOf="@+id/search_details_type" />
 
         <TextView
             android:id="@+id/search_details_description"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="40dp"
+            android:justificationMode="inter_word"
+            android:text="@string/add_description"
+            android:textSize="17sp"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/search_details_year"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/search_details_title" />
+            app:layout_constraintTop_toBottomOf="@+id/search_details_label_description" />
 
         <TextView
             android:id="@+id/search_details_rate"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="40dp"
+            android:text="@string/add_rate"
+            android:textSize="17sp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/search_details_description" />
+            app:layout_constraintHorizontal_bias="0.079"
+            app:layout_constraintStart_toEndOf="@+id/search_details_poster"
+            app:layout_constraintTop_toBottomOf="@+id/search_details_label_rate" />
 
         <TextView
             android:id="@+id/search_details_year"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="40dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/add_year"
+            android:textSize="18sp"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/search_details_title"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/search_details_rate" />
+            app:layout_constraintTop_toBottomOf="@+id/search_details_title" />
 
         <TextView
             android:id="@+id/search_details_genre"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="20dp"
+            android:text="@string/add_genre"
+            android:textSize="17sp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/search_details_year" />
+            app:layout_constraintStart_toEndOf="@+id/search_details_poster"
+            app:layout_constraintTop_toBottomOf="@+id/search_details_label_genre" />
 
         <TextView
             android:id="@+id/search_details_director"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="40dp"
-            android:layout_marginTop="16dp"
+            android:text="@string/add_director"
+            android:textSize="17sp"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/search_details_description"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/search_details_year" />
+            app:layout_constraintTop_toBottomOf="@+id/search_details_label_director" />
 
         <TextView
             android:id="@+id/search_details_actors"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="40dp"
-            app:layout_constraintBottom_toBottomOf="parent"
+            android:text="@string/add_actors"
+            android:textSize="17sp"
+            android:paddingBottom="30dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/search_details_director"
-            app:layout_constraintVertical_bias="0.0" />
+            app:layout_constraintTop_toBottomOf="@+id/search_details_label_actors" />
+
+        <TextView
+            android:id="@+id/search_details_label_country"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textStyle="bold"
+            android:text="@string/add_country"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.227"
+            app:layout_constraintStart_toEndOf="@+id/search_details_poster"
+            app:layout_constraintTop_toBottomOf="@+id/search_details_rate" />
+
+        <TextView
+            android:id="@+id/search_details_label_genre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/add_genre"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.211"
+            app:layout_constraintStart_toEndOf="@+id/search_details_poster"
+            app:layout_constraintTop_toBottomOf="@+id/search_details_country" />
+
+        <TextView
+            android:id="@+id/search_details_country"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/add_country"
+            android:textSize="17sp"
+            android:layout_marginHorizontal="40dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.24"
+            app:layout_constraintStart_toEndOf="@+id/search_details_poster"
+            app:layout_constraintTop_toBottomOf="@+id/search_details_label_country" />
+
+        <TextView
+            android:id="@+id/search_details_label_director"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/add_director"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.111"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/search_details_description" />
+
+        <TextView
+            android:id="@+id/search_details_label_actors"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/add_actors"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.108"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/search_details_director" />
+
+        <TextView
+            android:id="@+id/search_details_label_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="44dp"
+            android:text="@string/add_description"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.118"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/search_details_genre" />
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
