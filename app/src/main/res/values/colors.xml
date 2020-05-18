@@ -5,11 +5,15 @@
 
     <color name="lightSecondary">#ad0e0e</color>
     <color name="lightSecondaryVar">#ad0e0e</color>
+    <color name="check_light">#DA2828</color>
+    <color name="on_check_light">#FFFFFF</color>
 
-    <color name="darkPrimaryVar">#dce775</color>
-    <color name="darkPrimary">#dce775</color>
+    <color name="darkPrimaryVar">#fff59d</color>
+    <color name="darkPrimary">#fff59d</color>
 
-    <color name="darkSecondary">#dce775</color>
+    <color name="darkSecondary">#fff59d</color>
+    <color name="check_dark">#FFEA9D</color>
+    <color name="on_check_dark">#000000</color>
 
     <color name="darkStatusBar">#121212</color>
     <color name="white">#FFFFFF</color>

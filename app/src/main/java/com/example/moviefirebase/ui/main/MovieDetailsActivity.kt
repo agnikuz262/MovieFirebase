@@ -28,13 +28,21 @@ class MovieDetailsActivity : AppCompatActivity() {
                         val firebaseMovie = dataSnapshot.getValue(MovieDbEntity::class.java)
                         movie = firebaseMovie!!
 
+                        if (movie.type != "" && movie.type != null)
+                            details_type.setText(movie.type!!.capitalize())
                         details_title.setText(movie.title)
                         details_description.setText(movie.description)
-                        details_rate.setText(movie.rate + "/10")
+                        details_rate.setText(
+                            getString(
+                                R.string.rate_placeholder,
+                                movie.rate
+                            )
+                        )
                         details_director.setText(movie.director)
                         details_actors.setText(movie.actors)
                         details_year.setText(movie.year)
                         details_genre.setText(movie.genre)
+                        details_country.setText(movie.country)
                         if (movie.poster != null && movie.poster != "") {
                             try {
                                 Picasso.with(applicationContext).load(movie.poster)
@@ -82,6 +90,12 @@ class MovieDetailsActivity : AppCompatActivity() {
             val genre = details_genre.text.toString()
             //todo val poster = add_poster.text.toString()
             val rate = details_rate.text.toString()
+            var formattedRate: String
+            if (rate.contains("/10")) {
+                formattedRate = rate.replace("/10", "")
+            } else {
+                formattedRate = rate
+            }
             val type = details_type.text.toString()
             val country = details_country.text.toString()
 
@@ -91,7 +105,7 @@ class MovieDetailsActivity : AppCompatActivity() {
                 movie.poster,
                 director,
                 actors,
-                rate,
+                formattedRate,
                 movie.seen,
                 movie.id,
                 genre,

@@ -20,10 +20,11 @@ class MovieService {
         val retrofit =
             Retrofit.Builder().baseUrl(url).addConverterFactory(MoshiConverterFactory.create())
                 .addCallAdapterFactory(CoroutineCallAdapterFactory()).build()
+
         return retrofit.create(MovieApiClient::class.java)
     }
 
-    fun getMovie(title: String): MovieApiClient {
+    fun getMovie(title: String): MovieApiClient{
         val movieWords = title.split(" ".toRegex())
         var url = baseUrl + "t="
 
@@ -36,5 +37,7 @@ class MovieService {
                 .addCallAdapterFactory(CoroutineCallAdapterFactory()).build()
         return retrofit.create(MovieApiClient::class.java)
     }
+
+
 
 }

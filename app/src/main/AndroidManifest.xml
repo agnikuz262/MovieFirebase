@@ -3,6 +3,7 @@
     package="com.example.moviefirebase">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
         android:name="androidx.multidex.MultiDexApplication"
@@ -12,12 +13,16 @@
         android:roundIcon="@mipmap/ic_popcorn_fav_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.main.SearchDetailsActivity"></activity>
+        <activity android:name=".ui.main.SignInActivity"></activity>
+        <activity android:name=".ui.main.SignUpActivity" />
+        <activity android:name=".ui.main.SearchDetailsActivity" />
         <activity android:name=".ui.main.library.AddMovieActivity" />
         <activity
             android:name=".ui.main.MovieDetailsActivity"
             android:label="@string/title_activity_movie" />
-        <activity android:name=".MainActivity" android:windowSoftInputMode="adjustPan">
+        <activity
+            android:name=".MainActivity"
+            android:windowSoftInputMode="adjustPan">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

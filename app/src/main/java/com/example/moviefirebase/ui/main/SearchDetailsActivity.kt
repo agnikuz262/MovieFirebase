@@ -30,14 +30,16 @@ class SearchDetailsActivity : AppCompatActivity() {
             if (movieDetails.isSuccessful) {
                 movie = movieDetails.body()!!
 
+                search_details_type.setText(movie.type.capitalize())
                 search_details_title.setText(title)
                 search_details_description.setText(movie.description)
                 search_details_year.setText(movie.year)
                 if (movie.rate != "")
-                    search_details_rate.setText(movie.rate + "/10")
+                    search_details_rate.setText("${movie.rate}/10")
                 search_details_director.setText(movie.director)
                 search_details_actors.setText(movie.actors)
                 search_details_genre.setText(movie.genre)
+                search_details_country.setText(movie.country)
                 if (movie.poster != "") {
                     try {
                         Picasso.with(applicationContext).load(movie.poster)
@@ -53,10 +55,3 @@ class SearchDetailsActivity : AppCompatActivity() {
         }
     }
 }
-
-
-//GlobalScope.launch(Dispatchers.Main) {
-//    val movieDetails = MovieService().getMovie(searchList[position].title!!)
-//        .getMovieAsync().await()
-//
-//    if(movieDetails.isSuccessful) {

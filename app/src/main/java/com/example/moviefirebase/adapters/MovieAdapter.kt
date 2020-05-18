@@ -43,7 +43,10 @@ class MovieAdapter(
         holder.titleView.text = movieList[position].title
         holder.descriptionView.text = movieList[position].description
         if (movieList[position].rate != null && movieList[position].rate != "") {
-            holder.rateView.text = movieList[position].rate + "/10"
+            holder.rateView.setText(context.getString(
+                R.string.rate_placeholder,
+                movieList[position].rate
+            ))
         }
 
         when (movieList[position].seen) {
