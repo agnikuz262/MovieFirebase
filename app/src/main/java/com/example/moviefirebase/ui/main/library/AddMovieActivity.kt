@@ -5,15 +5,17 @@ import android.os.Bundle
 import android.widget.Toast
 import com.example.moviefirebase.R
 import com.example.moviefirebase.model.model.firebase.MovieDbEntity
+import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 import kotlinx.android.synthetic.main.activity_add_movie.*
-import kotlinx.android.synthetic.main.library_fragment.*
+
 import java.util.*
 
 class AddMovieActivity : AppCompatActivity() {
+    private val uid = FirebaseAuth.getInstance().uid
     private var dbReference: DatabaseReference =
-        FirebaseDatabase.getInstance().getReference("movies")
+        FirebaseDatabase.getInstance().getReference("movies").child("$uid")
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -40,6 +42,7 @@ class AddMovieActivity : AppCompatActivity() {
         val actors = add_actors.text.toString()
         val genre = add_genre.text.toString()
         //todo val poster = add_poster.text.toString()
+        //todo handle empty posters
         val poster =
             "https://m.media-amazon.com/images/M/MV5BZWJjMDEzZjUtYWE1Yy00M2ZiLThlMmItODljNTAzODFiMzc2XkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_SX300.jpg"
         val rate = add_rate.text.toString()
@@ -60,6 +63,7 @@ class AddMovieActivity : AppCompatActivity() {
             type,
             country
         )
+
         dbReference.child("${Date().time}").setValue(movie)
     }
 }

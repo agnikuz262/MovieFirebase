@@ -15,7 +15,8 @@ import com.example.moviefirebase.R
 import com.example.moviefirebase.model.model.firebase.MovieDbEntity
 import com.example.moviefirebase.model.model.movie_api.MovieSearch
 import com.example.moviefirebase.model.model.movie_api.MovieService
-import com.example.moviefirebase.ui.main.SearchDetailsActivity
+import com.example.moviefirebase.ui.main.search.SearchDetailsActivity
+import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 import com.squareup.picasso.Picasso
@@ -28,9 +29,9 @@ class SearchAdapter(
     private val searchList: List<MovieSearch>, val context: Context
 ) :
     RecyclerView.Adapter<SearchAdapter.ViewHolder>() {
-
+    private val uid = FirebaseAuth.getInstance().uid
     private val dbReference: DatabaseReference =
-        FirebaseDatabase.getInstance().getReference("movies")
+        FirebaseDatabase.getInstance().getReference("movies").child("$uid")
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val inflater: LayoutInflater = LayoutInflater.from(parent.context)
@@ -49,13 +50,19 @@ class SearchAdapter(
         holder.yearView.text = searchList[position].year
 
 
-        if (searchList[position].poster != null) {
+        if (searchList[position].poster != null && searchList[position].poster != "") {
             try {
                 Picasso.with(context).load(searchList[position].poster).into(holder.posterView)
             } catch (e: Exception) {
                 print(e)
             }
-        }
+        } else
+            try {
+                Picasso.with(context).load("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRGu_GCGyVAmipBdOyZuZVeDDhYTvMS1kAYkFR6N-AMbP6_T0Mq&usqp=CAU").into(holder.posterView)
+            } catch (e: java.lang.Exception) {
+                print(e)
+            }
+
         holder.addButtonView.setOnClickListener {
             GlobalScope.launch(Dispatchers.Main) {
                 val movieApi = MovieService().getMovie(searchList[position].title!!)
@@ -83,7 +90,10 @@ class SearchAdapter(
                             .show()
 
                         holder.addButtonView.setImageDrawable(context.getDrawable(R.drawable.ic_add_full))
+                    }.addOnCanceledListener {
+                        Toast.makeText(context, "Something went wrong: $it", Toast.LENGTH_SHORT).show()
                     }
+
                 } else {
                     Log.e("TAG", "Fetching movie in SearchAdapter error")
                     Toast.makeText(context, "Something went wrong", Toast.LENGTH_SHORT).show()

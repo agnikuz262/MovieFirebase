@@ -13,7 +13,8 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.moviefirebase.MainActivity
 import com.example.moviefirebase.R
 import com.example.moviefirebase.model.model.firebase.MovieDbEntity
-import com.example.moviefirebase.ui.main.MovieDetailsActivity
+import com.example.moviefirebase.ui.main.library.MovieDetailsActivity
+import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 import com.squareup.picasso.Picasso
@@ -25,8 +26,9 @@ class MovieAdapter(
     val fragment: Fragment
 ) :
     RecyclerView.Adapter<MovieAdapter.ViewHolder>() {
-
-    private val dbReference: DatabaseReference = FirebaseDatabase.getInstance().getReference("movies")
+    private val uid = FirebaseAuth.getInstance().uid
+    private val dbReference: DatabaseReference =
+        FirebaseDatabase.getInstance().getReference("movies").child("$uid")
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val inflater: LayoutInflater = LayoutInflater.from(parent.context)
@@ -43,10 +45,12 @@ class MovieAdapter(
         holder.titleView.text = movieList[position].title
         holder.descriptionView.text = movieList[position].description
         if (movieList[position].rate != null && movieList[position].rate != "") {
-            holder.rateView.setText(context.getString(
-                R.string.rate_placeholder,
-                movieList[position].rate
-            ))
+            holder.rateView.setText(
+                context.getString(
+                    R.string.rate_placeholder,
+                    movieList[position].rate
+                )
+            )
         }
 
         when (movieList[position].seen) {
@@ -63,7 +67,13 @@ class MovieAdapter(
             } catch (e: Exception) {
                 print(e)
             }
-        }
+        } else
+            try {
+                Picasso.with(context).load("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRGu_GCGyVAmipBdOyZuZVeDDhYTvMS1kAYkFR6N-AMbP6_T0Mq&usqp=CAU").into(holder.posterView)
+            } catch (e: Exception) {
+                print(e)
+            }
+
         holder.seenButtonView.setOnClickListener {
             if (movieList[position].seen == true) {
                 dbReference.child("${movieList[position].id}").child("seen").setValue(false)

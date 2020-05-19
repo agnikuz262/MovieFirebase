@@ -1,4 +1,4 @@
-package com.example.moviefirebase.ui.main
+package com.example.moviefirebase.ui.main.search
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

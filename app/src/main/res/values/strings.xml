@@ -37,4 +37,8 @@
     <string name="enter_password">Enter password</string>
     <string name="sign_in">Sign in</string>
     <string name="sign_up">Sign up</string>
+    <string name="don_t_have_an_account">Don\'t have an account?</string>
+    <string name="enjoy">Enjoy!</string>
+    <string name="have_account">Already have an account?</string>
+    <string name="register_your_data">Register your data</string>
 </resources>

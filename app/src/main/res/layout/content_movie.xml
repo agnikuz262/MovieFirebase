@@ -10,7 +10,7 @@
         android:layout_height="wrap_content"
         android:paddingBottom="20dp"
         app:layout_behavior="@string/appbar_scrolling_view_behavior"
-        tools:context=".ui.main.MovieDetailsActivity"
+        tools:context=".ui.main.library.MovieDetailsActivity"
         tools:showIn="@layout/activity_movie_details">
 
 
@@ -21,6 +21,7 @@
             android:layout_marginLeft="40dp"
             android:layout_marginRight="20dp"
             android:hint="@string/add_country"
+            android:inputType="textCapWords"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/details_poster"
             app:layout_constraintTop_toBottomOf="@+id/label_country" />
@@ -32,6 +33,7 @@
             android:layout_marginHorizontal="40dp"
             android:layout_marginTop="24dp"
             android:hint="@string/add_type"
+            android:inputType="textCapWords"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
@@ -55,7 +57,8 @@
             android:layout_marginLeft="40dp"
             android:layout_marginRight="20dp"
             android:hint="@string/add_title"
-            android:textSize="32dp"
+            android:textSize="32sp"
+            android:inputType="textCapSentences"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.666"
             app:layout_constraintStart_toStartOf="parent"
@@ -67,6 +70,7 @@
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="40dp"
             android:hint="@string/add_description"
+            android:inputType="textCapSentences"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/label_description" />
@@ -108,6 +112,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:hint="@string/add_rate"
+                android:inputType="numberDecimal"
                 android:textSize="24sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/details_poster"
@@ -120,6 +125,7 @@
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="40dp"
             android:hint="@string/add_year"
+            android:inputType="numberDecimal"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
@@ -132,7 +138,6 @@
             android:layout_marginTop="28dp"
             android:text="@string/add_genre"
             android:textStyle="bold"
-            android:inputType="textCapWords"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.107"
             app:layout_constraintStart_toStartOf="parent"
@@ -144,6 +149,7 @@
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="40dp"
             android:hint="@string/add_genre"
+            android:inputType="textCapWords"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/label_genre" />
@@ -167,6 +173,7 @@
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="40dp"
             android:hint="@string/add_director"
+            android:inputType="textCapWords"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/label_director" />
@@ -189,6 +196,7 @@
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="40dp"
             android:hint="@string/add_actors"
+            android:inputType="textCapWords"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.512"
             app:layout_constraintStart_toStartOf="parent"
@@ -228,7 +236,6 @@
             android:layout_marginTop="36dp"
             android:text="@string/add_country"
             android:textStyle="bold"
-            android:inputType="textCapWords"
             app:layout_constraintStart_toEndOf="@+id/details_poster"
             app:layout_constraintTop_toBottomOf="@+id/details_rate_row" />
 

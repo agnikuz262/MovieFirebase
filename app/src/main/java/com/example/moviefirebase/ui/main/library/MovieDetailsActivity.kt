@@ -1,4 +1,4 @@
-package com.example.moviefirebase.ui.main
+package com.example.moviefirebase.ui.main.library
 
 import android.os.Bundle
 import android.widget.Toast
@@ -6,6 +6,7 @@ import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import com.example.moviefirebase.R
 import com.example.moviefirebase.model.model.firebase.MovieDbEntity
+import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.*
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.content_movie.*
@@ -13,7 +14,8 @@ import java.lang.Exception
 
 class MovieDetailsActivity : AppCompatActivity() {
     private lateinit var movie: MovieDbEntity
-    var dbReference: DatabaseReference = FirebaseDatabase.getInstance().getReference("movies")
+    private val uid = FirebaseAuth.getInstance().uid
+    var dbReference: DatabaseReference = FirebaseDatabase.getInstance().getReference("movies").child("$uid")
     private var id: Long = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -90,7 +92,7 @@ class MovieDetailsActivity : AppCompatActivity() {
             val genre = details_genre.text.toString()
             //todo val poster = add_poster.text.toString()
             val rate = details_rate.text.toString()
-            var formattedRate: String
+            val formattedRate: String
             if (rate.contains("/10")) {
                 formattedRate = rate.replace("/10", "")
             } else {
@@ -113,6 +115,7 @@ class MovieDetailsActivity : AppCompatActivity() {
                 type,
                 country
             )
+
             val postMovie = updatedMovie.toMap()
             dbReference.child("$id").updateChildren(postMovie)
 

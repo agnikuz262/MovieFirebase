@@ -13,12 +13,12 @@
         android:roundIcon="@mipmap/ic_popcorn_fav_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.main.SignInActivity"></activity>
-        <activity android:name=".ui.main.SignUpActivity" />
-        <activity android:name=".ui.main.SearchDetailsActivity" />
+        <activity android:name=".ui.main.authentication.SignInActivity"></activity>
+        <activity android:name=".ui.main.authentication.SignUpActivity" />
+        <activity android:name=".ui.main.search.SearchDetailsActivity" />
         <activity android:name=".ui.main.library.AddMovieActivity" />
         <activity
-            android:name=".ui.main.MovieDetailsActivity"
+            android:name=".ui.main.library.MovieDetailsActivity"
             android:label="@string/title_activity_movie" />
         <activity
             android:name=".MainActivity"

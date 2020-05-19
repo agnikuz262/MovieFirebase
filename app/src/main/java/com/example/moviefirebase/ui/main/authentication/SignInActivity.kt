@@ -1,4 +1,4 @@
-package com.example.moviefirebase.ui.main
+package com.example.moviefirebase.ui.main.authentication
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -30,7 +30,7 @@ class SignInActivity : AppCompatActivity() {
         email = findViewById(R.id.email_edt_text)
         password = findViewById(R.id.pass_edt_text)
 
-        signUpButton = findViewById(R.id.signup_btn)
+        signUpButton = findViewById(R.id.sign_up_btn)
         singInButton = findViewById(R.id.login_btn)
 
         auth = FirebaseAuth.getInstance()

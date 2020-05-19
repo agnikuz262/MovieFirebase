@@ -1,6 +1,7 @@
 package com.example.moviefirebase.ui.main.search
 
 import android.content.Context
+import android.content.Intent
 import android.net.ConnectivityManager
 import android.os.AsyncTask
 import android.os.Build
@@ -16,9 +17,12 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.moviefirebase.MainActivity
 import com.example.moviefirebase.R
 import com.example.moviefirebase.adapters.SearchAdapter
 import com.example.moviefirebase.model.model.movie_api.MovieSearchResponse
+import com.example.moviefirebase.ui.main.authentication.SignInActivity
+import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.search_fragment.*
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
@@ -91,6 +95,13 @@ class SearchFragment : Fragment() {
                 )
 
             }
+        }
+
+        logout_button.setOnClickListener {
+            FirebaseAuth.getInstance().signOut()
+            val intent = Intent(requireContext(), SignInActivity::class.java)
+            startActivity(intent)
+            (context as MainActivity).finish()
         }
     }
 

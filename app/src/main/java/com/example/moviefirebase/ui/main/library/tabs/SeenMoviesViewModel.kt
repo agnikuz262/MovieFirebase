@@ -4,10 +4,12 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.example.moviefirebase.model.model.firebase.MovieDbEntity
+import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.*
 
 class SeenMoviesViewModel : ViewModel() {
-    var dbReference: DatabaseReference = FirebaseDatabase.getInstance().getReference("movies")
+    private val uid = FirebaseAuth.getInstance().uid
+    var dbReference: DatabaseReference = FirebaseDatabase.getInstance().getReference("movies").child("$uid")
     var seenMovies: MutableLiveData<List<MovieDbEntity>> = MutableLiveData()
 
     fun getSeenMovies(): LiveData<List<MovieDbEntity>> {
