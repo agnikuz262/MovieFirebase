@@ -61,15 +61,14 @@ class MovieAdapter(
                 holder.seenButtonView.setImageDrawable(context.getDrawable(R.drawable.ic_fav_check_empty))
             }
         }
-        if (movieList[position].poster != null) {
-            try {
-                Picasso.with(context).load(movieList[position].poster).into(holder.posterView)
-            } catch (e: Exception) {
-                print(e)
-            }
+        if (movieList[position].poster != null && movieList[position].poster != "N/A") {
+            Picasso.with(context).load(movieList[position].poster).error(R.drawable.ic_movie)
+                .into(holder.posterView)
         } else
             try {
-                Picasso.with(context).load("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRGu_GCGyVAmipBdOyZuZVeDDhYTvMS1kAYkFR6N-AMbP6_T0Mq&usqp=CAU").into(holder.posterView)
+                Picasso.with(context)
+                    .load(context.getString(R.string.default_poster_url))
+                    .into(holder.posterView)
             } catch (e: Exception) {
                 print(e)
             }

@@ -10,12 +10,14 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.*
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.content_movie.*
+import kotlinx.android.synthetic.main.content_search_movie.*
 import java.lang.Exception
 
 class MovieDetailsActivity : AppCompatActivity() {
     private lateinit var movie: MovieDbEntity
     private val uid = FirebaseAuth.getInstance().uid
-    var dbReference: DatabaseReference = FirebaseDatabase.getInstance().getReference("movies").child("$uid")
+    var dbReference: DatabaseReference =
+        FirebaseDatabase.getInstance().getReference("movies").child("$uid")
     private var id: Long = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -45,14 +47,14 @@ class MovieDetailsActivity : AppCompatActivity() {
                         details_year.setText(movie.year)
                         details_genre.setText(movie.genre)
                         details_country.setText(movie.country)
-                        if (movie.poster != null && movie.poster != "") {
-                            try {
-                                Picasso.with(applicationContext).load(movie.poster)
-                                    .into(details_poster)
-                            } catch (e: Exception) {
-                                print(e)
-                            }
-                        }
+                        if (movie.poster != "" && movie.poster != "N/A") {
+                            Picasso.with(applicationContext).load(movie.poster)
+                                .error(R.drawable.ic_movie)
+                                .into(details_poster)
+                        } else
+                            Picasso.with(applicationContext)
+                                .load(getString(R.string.default_poster_url)).error(R.drawable.ic_movie)
+                                .into(details_poster)
                     }
                 }
 

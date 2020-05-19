@@ -24,6 +24,8 @@ class AddMovieActivity : AppCompatActivity() {
         add_movie_button.setOnClickListener {
             if (add_title.text.toString() == "")
                 Toast.makeText(this, "Title is required", Toast.LENGTH_SHORT).show()
+            else if (!add_poster.text.toString().contains("https://"))
+                Toast.makeText(this, "Poster url must contain \"https://\"", Toast.LENGTH_SHORT).show()
             else {
                 Thread {
                     addMovie()
@@ -41,10 +43,8 @@ class AddMovieActivity : AppCompatActivity() {
         val director = add_director.text.toString()
         val actors = add_actors.text.toString()
         val genre = add_genre.text.toString()
-        //todo val poster = add_poster.text.toString()
-        //todo handle empty posters
-        val poster =
-            "https://m.media-amazon.com/images/M/MV5BZWJjMDEzZjUtYWE1Yy00M2ZiLThlMmItODljNTAzODFiMzc2XkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_SX300.jpg"
+        val poster = add_poster.text.toString()
+
         val rate = add_rate.text.toString()
         val type = add_type.text.toString()
         val country = add_country.text.toString()

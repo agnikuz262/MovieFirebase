@@ -40,9 +40,17 @@ class SearchDetailsActivity : AppCompatActivity() {
                 search_details_actors.setText(movie.actors)
                 search_details_genre.setText(movie.genre)
                 search_details_country.setText(movie.country)
-                if (movie.poster != "") {
+                if (movie.poster != "" && movie.poster != "N/A") {
                     try {
                         Picasso.with(applicationContext).load(movie.poster)
+                            .into(search_details_poster)
+                    } catch (e: Exception) {
+                        print(e)
+                    }
+                } else {
+                    try {
+                        Picasso.with(applicationContext)
+                            .load(getString(R.string.default_poster_url))
                             .into(search_details_poster)
                     } catch (e: Exception) {
                         print(e)

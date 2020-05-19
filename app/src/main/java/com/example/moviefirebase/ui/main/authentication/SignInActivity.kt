@@ -36,20 +36,20 @@ class SignInActivity : AppCompatActivity() {
         auth = FirebaseAuth.getInstance()
 
         singInButton.setOnClickListener {
-            var email: String = email.text.toString()
-            var password: String = password.text.toString()
+            val email: String = email.text.toString()
+            val password: String = password.text.toString()
 
             if(TextUtils.isEmpty(email) || TextUtils.isEmpty(password)) {
                 Toast.makeText(applicationContext, "Please fill all the fields", Toast.LENGTH_LONG).show()
             } else{
                 auth.signInWithEmailAndPassword(email, password).addOnCompleteListener(this, OnCompleteListener { task ->
                     if(task.isSuccessful) {
-                        Toast.makeText(this, "Successfully Logged In", Toast.LENGTH_LONG).show()
+                        Toast.makeText(this, "Signed in successfully", Toast.LENGTH_LONG).show()
                         val intent = Intent(this, MainActivity::class.java)
                         startActivity(intent)
                         finish()
                     }else {
-                        Toast.makeText(this, "Login Failed", Toast.LENGTH_LONG).show()
+                        Toast.makeText(this, "Login failed, incorrect email or password", Toast.LENGTH_LONG).show()
                     }
                 })
             }

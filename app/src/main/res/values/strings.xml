@@ -41,4 +41,7 @@
     <string name="enjoy">Enjoy!</string>
     <string name="have_account">Already have an account?</string>
     <string name="register_your_data">Register your data</string>
+    <string name="default_poster_url"><![CDATA[https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRGu_GCGyVAmipBdOyZuZVeDDhYTvMS1kAYkFR6N-AMbP6_T0Mq&usqp=CAU]]></string>
+    <string name="poster_url">Poster url</string>
+    <string name="add_movie">Add movie</string>
 </resources>

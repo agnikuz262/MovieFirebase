@@ -35,8 +35,8 @@ class SignUpActivity : AppCompatActivity() {
         signUpBtn = findViewById(R.id.sign_up_btn)
 
         signUpBtn.setOnClickListener{
-            var email: String = email.text.toString()
-            var password: String = password.text.toString()
+            val email: String = email.text.toString()
+            val password: String = password.text.toString()
 
             if(TextUtils.isEmpty(email) || TextUtils.isEmpty(password)) {
                 Toast
@@ -44,12 +44,12 @@ class SignUpActivity : AppCompatActivity() {
             } else{
                 auth.createUserWithEmailAndPassword(email, password).addOnCompleteListener(this, OnCompleteListener{ task ->
                     if(task.isSuccessful){
-                        Toast.makeText(this, "Successfully Registered", Toast.LENGTH_LONG).show()
+                        Toast.makeText(this, "Successfully registered", Toast.LENGTH_LONG).show()
                         val intent = Intent(this, MainActivity::class.java)
                         startActivity(intent)
                         finish()
                     }else {
-                        Toast.makeText(this, "Registration Failed", Toast.LENGTH_LONG).show()
+                        Toast.makeText(this, "Registration failed", Toast.LENGTH_LONG).show()
                     }
                 })
             }

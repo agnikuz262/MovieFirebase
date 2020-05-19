@@ -46,22 +46,15 @@ class SearchAdapter(
     @RequiresApi(Build.VERSION_CODES.LOLLIPOP)
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder.titleView.text = searchList[position].title
-        holder.typeView.text = searchList[position].type
+        holder.typeView.text = searchList[position].type!!.capitalize()
         holder.yearView.text = searchList[position].year
 
-
-        if (searchList[position].poster != null && searchList[position].poster != "") {
-            try {
-                Picasso.with(context).load(searchList[position].poster).into(holder.posterView)
-            } catch (e: Exception) {
-                print(e)
-            }
+        Log.i("POSTER", "${searchList[position].poster}")
+        if (searchList[position].poster != null && searchList[position].poster != "N/A") {
+            Picasso.with(context).load(searchList[position].poster).error(R.drawable.ic_movie).into(holder.posterView)
         } else
-            try {
-                Picasso.with(context).load("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRGu_GCGyVAmipBdOyZuZVeDDhYTvMS1kAYkFR6N-AMbP6_T0Mq&usqp=CAU").into(holder.posterView)
-            } catch (e: java.lang.Exception) {
-                print(e)
-            }
+            Picasso.with(context).load(context.getString(R.string.default_poster_url)).into(holder.posterView)
+
 
         holder.addButtonView.setOnClickListener {
             GlobalScope.launch(Dispatchers.Main) {
@@ -91,7 +84,8 @@ class SearchAdapter(
 
                         holder.addButtonView.setImageDrawable(context.getDrawable(R.drawable.ic_add_full))
                     }.addOnCanceledListener {
-                        Toast.makeText(context, "Something went wrong: $it", Toast.LENGTH_SHORT).show()
+                        Toast.makeText(context, "Something went wrong: $it", Toast.LENGTH_SHORT)
+                            .show()
                     }
 
                 } else {
