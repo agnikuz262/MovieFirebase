@@ -9,6 +9,7 @@ import com.example.moviefirebase.model.model.firebase.MovieDbEntity
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.*
 import com.squareup.picasso.Picasso
+import kotlinx.android.synthetic.main.activity_add_movie.*
 import kotlinx.android.synthetic.main.content_movie.*
 import kotlinx.android.synthetic.main.content_search_movie.*
 import java.lang.Exception
@@ -26,7 +27,7 @@ class MovieDetailsActivity : AppCompatActivity() {
 
         Thread {
             id = intent.getLongExtra("id", -1)
-            dbReference.child("$id").addListenerForSingleValueEvent(object : ValueEventListener {
+            dbReference.child("$id").addValueEventListener(object : ValueEventListener {
                 override fun onDataChange(dataSnapshot: DataSnapshot) {
                     if (dataSnapshot.exists()) {
                         val firebaseMovie = dataSnapshot.getValue(MovieDbEntity::class.java)
@@ -92,7 +93,6 @@ class MovieDetailsActivity : AppCompatActivity() {
             val director = details_director.text.toString()
             val actors = details_actors.text.toString()
             val genre = details_genre.text.toString()
-            //todo val poster = add_poster.text.toString()
             val rate = details_rate.text.toString()
             val formattedRate: String
             if (rate.contains("/10")) {
@@ -102,11 +102,13 @@ class MovieDetailsActivity : AppCompatActivity() {
             }
             val type = details_type.text.toString()
             val country = details_country.text.toString()
-
+            var poster: String
+            if(movie.poster != null && movie.poster != "") poster = movie.poster.toString()
+            else poster = "poster"
             val updatedMovie = MovieDbEntity(
                 title,
                 description,
-                movie.poster,
+                poster,
                 director,
                 actors,
                 formattedRate,

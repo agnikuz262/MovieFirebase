@@ -1,4 +1,4 @@
-package com.example.moviefirebase.model.model.movie_api
+package com.example.moviefirebase.model.model.api
 
 import com.jakewharton.retrofit2.adapter.kotlin.coroutines.CoroutineCallAdapterFactory
 import retrofit2.Retrofit

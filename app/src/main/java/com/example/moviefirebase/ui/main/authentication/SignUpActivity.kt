@@ -40,7 +40,7 @@ class SignUpActivity : AppCompatActivity() {
 
             if(TextUtils.isEmpty(email) || TextUtils.isEmpty(password)) {
                 Toast
-                    .makeText(this, "Please fill all the fields", Toast.LENGTH_LONG).show()
+                    .makeText(this, "Please fil all the fields", Toast.LENGTH_LONG).show()
             } else{
                 auth.createUserWithEmailAndPassword(email, password).addOnCompleteListener(this, OnCompleteListener{ task ->
                     if(task.isSuccessful){

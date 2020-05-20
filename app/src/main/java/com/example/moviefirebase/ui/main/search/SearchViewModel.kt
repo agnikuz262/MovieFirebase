@@ -1,8 +1,8 @@
 package com.example.moviefirebase.ui.main.search
 
 import androidx.lifecycle.ViewModel
-import com.example.moviefirebase.model.model.movie_api.MovieSearchResponse
-import com.example.moviefirebase.model.model.movie_api.MovieService
+import com.example.moviefirebase.model.model.api.MovieSearchResponse
+import com.example.moviefirebase.model.model.api.MovieService
 
 class SearchViewModel : ViewModel() {
     var searchedMovies: MovieSearchResponse? = null

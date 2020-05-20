@@ -20,7 +20,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.moviefirebase.MainActivity
 import com.example.moviefirebase.R
 import com.example.moviefirebase.adapters.SearchAdapter
-import com.example.moviefirebase.model.model.movie_api.MovieSearchResponse
+import com.example.moviefirebase.model.model.api.MovieSearchResponse
 import com.example.moviefirebase.ui.main.authentication.SignInActivity
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.search_fragment.*

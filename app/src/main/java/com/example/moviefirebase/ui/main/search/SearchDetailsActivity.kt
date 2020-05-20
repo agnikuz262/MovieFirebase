@@ -6,8 +6,8 @@ import android.util.Log
 import android.widget.Toast
 import com.example.moviefirebase.R
 
-import com.example.moviefirebase.model.model.movie_api.MovieApiEntity
-import com.example.moviefirebase.model.model.movie_api.MovieService
+import com.example.moviefirebase.model.model.api.MovieApiEntity
+import com.example.moviefirebase.model.model.api.MovieService
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.content_search_movie.*
 import kotlinx.coroutines.Dispatchers

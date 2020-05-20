@@ -24,7 +24,7 @@ class AddMovieActivity : AppCompatActivity() {
         add_movie_button.setOnClickListener {
             if (add_title.text.toString() == "")
                 Toast.makeText(this, "Title is required", Toast.LENGTH_SHORT).show()
-            else if (!add_poster.text.toString().contains("https://"))
+            else if (!add_poster.text.toString().contains("https://") && add_poster.text.toString() != "")
                 Toast.makeText(this, "Poster url must contain \"https://\"", Toast.LENGTH_SHORT).show()
             else {
                 Thread {
@@ -43,7 +43,8 @@ class AddMovieActivity : AppCompatActivity() {
         val director = add_director.text.toString()
         val actors = add_actors.text.toString()
         val genre = add_genre.text.toString()
-        val poster = add_poster.text.toString()
+        var poster = add_poster.text.toString()
+        if(poster == "") poster = "poster"
 
         val rate = add_rate.text.toString()
         val type = add_type.text.toString()

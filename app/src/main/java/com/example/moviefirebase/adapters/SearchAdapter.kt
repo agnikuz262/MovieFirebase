@@ -13,8 +13,8 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.moviefirebase.MainActivity
 import com.example.moviefirebase.R
 import com.example.moviefirebase.model.model.firebase.MovieDbEntity
-import com.example.moviefirebase.model.model.movie_api.MovieSearch
-import com.example.moviefirebase.model.model.movie_api.MovieService
+import com.example.moviefirebase.model.model.api.MovieSearch
+import com.example.moviefirebase.model.model.api.MovieService
 import com.example.moviefirebase.ui.main.search.SearchDetailsActivity
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DatabaseReference
@@ -48,7 +48,7 @@ class SearchAdapter(
         holder.titleView.text = searchList[position].title
         holder.typeView.text = searchList[position].type!!.capitalize()
         holder.yearView.text = searchList[position].year
-        
+
         if (searchList[position].poster != null && searchList[position].poster != "N/A") {
             Picasso.with(context).load(searchList[position].poster).error(R.drawable.ic_new).into(holder.posterView)
         } else

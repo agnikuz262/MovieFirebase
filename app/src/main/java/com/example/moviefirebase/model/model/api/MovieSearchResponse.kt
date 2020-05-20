@@ -1,4 +1,4 @@
-package com.example.moviefirebase.model.model.movie_api
+package com.example.moviefirebase.model.model.api
 
 import com.squareup.moshi.Json
 import com.squareup.moshi.JsonClass
