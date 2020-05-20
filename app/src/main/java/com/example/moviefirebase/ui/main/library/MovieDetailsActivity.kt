@@ -49,11 +49,11 @@ class MovieDetailsActivity : AppCompatActivity() {
                         details_country.setText(movie.country)
                         if (movie.poster != "" && movie.poster != "N/A") {
                             Picasso.with(applicationContext).load(movie.poster)
-                                .error(R.drawable.ic_movie)
+                                .error(R.drawable.ic_new)
                                 .into(details_poster)
                         } else
                             Picasso.with(applicationContext)
-                                .load(getString(R.string.default_poster_url)).error(R.drawable.ic_movie)
+                                .load(getString(R.string.default_poster_url)).error(R.drawable.ic_new)
                                 .into(details_poster)
                     }
                 }

@@ -48,10 +48,9 @@ class SearchAdapter(
         holder.titleView.text = searchList[position].title
         holder.typeView.text = searchList[position].type!!.capitalize()
         holder.yearView.text = searchList[position].year
-
-        Log.i("POSTER", "${searchList[position].poster}")
+        
         if (searchList[position].poster != null && searchList[position].poster != "N/A") {
-            Picasso.with(context).load(searchList[position].poster).error(R.drawable.ic_movie).into(holder.posterView)
+            Picasso.with(context).load(searchList[position].poster).error(R.drawable.ic_new).into(holder.posterView)
         } else
             Picasso.with(context).load(context.getString(R.string.default_poster_url)).into(holder.posterView)
 

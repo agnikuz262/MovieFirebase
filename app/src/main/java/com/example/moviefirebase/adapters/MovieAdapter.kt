@@ -62,7 +62,7 @@ class MovieAdapter(
             }
         }
         if (movieList[position].poster != null && movieList[position].poster != "N/A") {
-            Picasso.with(context).load(movieList[position].poster).error(R.drawable.ic_movie)
+            Picasso.with(context).load(movieList[position].poster).error(R.drawable.ic_new)
                 .into(holder.posterView)
         } else
             try {
